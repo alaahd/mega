@@ -319,7 +319,7 @@
 						?>
 						</ul>
 						<div class="clearfix"></div>
-						<form method="POST" action="json.php" id="voteForm">
+						<form method="POST" action="vote.php" id="voteForm">
 							<?php 
 							$i = 0;						
 							foreach($questions as $q) {
@@ -341,7 +341,7 @@
 												<img src="<?php echo $o['file_name']; ?>" />
 												<p><?php echo $o['choice']; ?></p>
 												<a class="rad_select" id="question-<?php echo $i.'-'.$j ?>" href="#">SELECT</a>
-												<input value="false" class="hide radio_control clearfix" type="radio" name="question-<?php echo $i ?>">											
+												<input value="<?php echo $o['option_id'] ?>" class="hide radio_control clearfix" type="radio" name="qid[<?php echo $q['qid'] ?>]">											
 											</div>												
 										<?php } ?>	
 										<span class="clearfix"></span>
@@ -363,21 +363,21 @@
 							?>
 							<div class="main-content-subscribe"> 
 								<div class="standalone-field">
-									<div class="form-item" id="edit-Name-wrapper">
+									<div class="form-item xfg" id="edit-Name-wrapper">
 										<label for="edit-Name">Name: <span class="form-required" title="This field is required.">*</span></label>
 										<input type="text" maxlength="128" name="name" id="edit-Name" size="60" value="" class="form-text required">
 										<p class="error_text">Name can't be blank</p>
 									</div>
 								</div>
 								<div class="floating-field">
-									<div class="form-item" id="edit-Email-wrapper">
+									<div class="form-item xfg" id="edit-Email-wrapper">
 										<label for="edit-Email">Email: <span class="form-required" title="This field is required.">*</span></label>
 										<input type="text" maxlength="128" name="email" id="edit-Email" size="60" value="" class="form-text required">
 										<p class="error_text">You must enter an Email</p>
 									</div>
 								</div>
 								<div class="floating-field">
-									<div class="form-item" id="edit-Mobile-wrapper">
+									<div class="form-item xfg" id="edit-Mobile-wrapper">
 										<label for="edit-Mobile">Mobile: <span class="form-required" title="This field is required.">*</span></label>
 										<input type="text" maxlength="128" name="mobile" id="edit-Mobile" size="60" value="" class="form-text required">
 										<p class="error_text">Phone no. should not be blank</p>
@@ -385,9 +385,11 @@
 								</div>
 								<div class="standalone-field field-clear"></div>
 								<div class="clearfix submite_sub"><br/></div>
-								<input type="submit" name="op" id="edit-submit" style="margin:20px 0 0 0" value="Submit" class="form-submit">
+								<input type="button" name="op" id="edit-submit" style="margin:20px 0 0 0" value="Submit" class="form-submit">
 							</div>
 						</form>
+						<p class="error_vote">Error posting vote</p>
+						<p class="success_vote">Successfully Voted</p>
 					</div>
 				</div>	
 			</div>	

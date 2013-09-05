@@ -26,21 +26,46 @@ jQuery(document).ready(function() {
 	jQuery('.v_option .radio_control').change(function(e){
 		alert('me');
 	});
-	jQuery('#voteForm').submit(function(e){
+	jQuery('.form-submit').click(function(e){
 		e.preventDefault();
 		var formx = jQuery('#voteForm');
 		jQuery('.options_wrap').removeClass('error_overlay');
 		jQuery('.error_text').hide();
+		console.log(from_valid_one());
+		console.log(from_valid_two());
+		if(from_valid_one() && from_valid_two()) {
+			$.post("vote.php", $('#voteForm').serialize(), function(data) {
+				if(data.error) {
+					jQuery('.error_vote').show();
+				}
+				else {
+					formx.slideUp();					
+					jQuery('.success_vote').show();
+				}				
+			}, 'json');
+		}		
+	});
+	function from_valid_one() {
+		var flag = true;
 		jQuery('.options_wrap').each(function(index){
 			if(jQuery(this).find('.radio_control:checked').length == 0) {
 				jQuery(this).addClass('error_overlay');
 				jQuery(this).find('.error_text').show();
+				flag = false;
+				return;
 			}
 		});	
-		jQuery('.form-item').each(function(){		
+		return flag;
+	}
+	function from_valid_two() {
+		var flag = true;
+		jQuery('.xfg').each(function(){		
 			if(jQuery(this).find('input').val() == '') {
 				jQuery(this).find('.error_text').show();
+				flag = false;
+				return;
 			}
 		});	
-	});
+		return flag;
+	}
 });

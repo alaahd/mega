@@ -321,3 +321,17 @@ input[type="text"] {
 	width: 206px;
 	display: none;
 }
+.error_vote {
+	padding: 15px;
+	background: rgb(255, 218, 218);
+	color: rgb(138, 0, 0);
+	border: 1px solid rgb(138, 0, 0);
+	display : none
+}
+.success_vote {
+	padding: 15px;
+	background: rgb(218, 255, 239);
+	color: rgb(37, 99, 59);
+	border: 1px solid rgb(1, 70, 28);
+	display : none
+}
