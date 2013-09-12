@@ -210,17 +210,17 @@ a.lang_ar_link {
 .contact_icon_2 {
 	background-position: 0 -16px;
 }
-
-.spons_1 { background-image:url('img/sponsors v2-01.jpg') }
-.spons_2 { background-image:url('img/sponsors v2-02.jpg') }
-.spons_3 { background-image:url('img/sponsors v2-03.jpg') }
-.spons_4 { background-image:url('img/sponsors v2-04.jpg') }
-.spons_5 { background-image:url('img/sponsors v2-05.jpg') }
-.spons_6 { background-image:url('img/sponsors v2-06.jpg') }
-.spons_7 { background-image:url('img/sponsors v2-07.jpg') }
-.spons_8 { background-image:url('img/sponsors v2-08.jpg') }
-.spons_9 { background-image:url('img/sponsors v2-09.jpg') }
-.spons_10 { background-image:url('img/sponsors v2-10.jpg') }
+.spons_0 { background-image:url('img/sponsors-v2-00.jpg') }
+.spons_1 { background-image:url('img/sponsors-v2-01.jpg') }
+.spons_2 { background-image:url('img/sponsors-v2-02.jpg') }
+.spons_3 { background-image:url('img/sponsors-v2-03.jpg') }
+.spons_4 { background-image:url('img/sponsors-v2-04.jpg') }
+.spons_5 { background-image:url('img/sponsors-v2-05.jpg') }
+.spons_6 { background-image:url('img/sponsors-v2-06.jpg') }
+.spons_7 { background-image:url('img/sponsors-v2-07.jpg') }
+.spons_8 { background-image:url('img/sponsors-v2-08.jpg') }
+.spons_9 { background-image:url('img/sponsors-v2-09.jpg') }
+.spons_10 { background-image:url('img/sponsors-v2-10.jpg') }
 
 .float-L {
 	float : left;
@@ -282,7 +282,7 @@ input[type="text"] {
 }
 .v_option p {
 	float: right;
-	width: 125px;
+	width: 115px;
 	color: #333;
 	font-weight: bold;
 	font-size: 12px;

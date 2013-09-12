@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 05, 2013 at 05:43 PM
+-- Generation Time: Sep 12, 2013 at 03:13 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -35,21 +35,37 @@ CREATE TABLE IF NOT EXISTS `options` (
   `file_name` longtext NOT NULL,
   PRIMARY KEY (`option_id`),
   KEY `qid` (`qid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `options`
 --
 
 INSERT INTO `options` (`option_id`, `qid`, `choice`, `file_name`) VALUES
-(1, 1, 'ABU DHABI CITY GOLF 9TH HOLE', 'img/op1.png'),
-(2, 1, 'JEBEL ALI GOLF RESORT & SPA 4TH HOLE', 'img/op1.png'),
-(3, 1, 'ABU DHABI CITY GOLF 9TH HOLE', 'img/op1.png'),
-(4, 1, 'JEBEL ALI GOLF RESORT & SPA 4TH HOLE', 'img/op1.png'),
-(5, 2, 'ABU DHABI CITY GOLF 9TH HOLE', 'img/op1.png'),
-(6, 2, 'JEBEL ALI GOLF RESORT & SPA 4TH HOLE', 'img/op1.png'),
-(7, 2, 'ABU DHABI CITY GOLF 9TH HOLE', 'img/op1.png'),
-(8, 2, 'JEBEL ALI GOLF RESORT & SPA 4TH HOLE', 'img/op1.png');
+(1, 1, 'Abu Dhabi Golf Club	', 'img/logos/abu_dhabi.jpg'),
+(2, 1, 'Abu Dhabi City Golf Club', 'img/logos/abu_dhab_city.jpg'),
+(3, 1, 'Almouj Golf Club', 'img/logos/almouj.jpg'),
+(4, 1, 'Al Hamra Golf Club', 'img/logos/hamra.jpg'),
+(5, 1, 'Arabian Ranches', 'img/logos/ranches.jpg'),
+(6, 1, 'Dubai Creek', 'img/logos/creek.jpg'),
+(7, 1, 'Emirates Hills', 'img/logos/hills.jpg'),
+(8, 1, 'Yas Links', 'img/logos/yas.jpg'),
+(9, 1, 'Address Montgomerie', 'img/logos/address.jpg'),
+(10, 1, 'Saadiyat Golf Club', 'img/logos/saadiyat.jpg'),
+(11, 1, 'Els Club', 'img/logos/els.jpg'),
+(12, 1, 'Meydan Golf club', 'img/logos/meydan.jpg'),
+(13, 2, 'Abu Dhabi Golf Club', 'img/logos/abu_dhabi.jpg'),
+(14, 2, 'Abu Dhabi City Golf Club', 'img/logos/abu_dhab_city.jpg'),
+(15, 2, 'Al Hamra Golf Club', 'img/logos/hamra.jpg'),
+(16, 2, 'Arabian Ranches', 'img/logos/ranches.jpg'),
+(17, 2, 'Dubai Creek', 'img/logos/creek.jpg'),
+(18, 2, 'Emirates Hills', 'img/logos/hills.jpg'),
+(19, 2, 'Jumeirah Estates', 'img/logos/jumeirah.jpg'),
+(20, 2, 'Yas Links', 'img/logos/yas.jpg'),
+(21, 2, 'Address Montgomerie', 'img/logos/address.jpg'),
+(22, 2, 'Sharjah Golf Club', 'img/logos/sharjah.jpg'),
+(23, 2, 'Saadiyat Golf Club', 'img/logos/saadiyat.jpg'),
+(24, 2, 'Sahara Golf Club', 'img/logos/sahara.jpg');
 
 -- --------------------------------------------------------
 
@@ -68,8 +84,8 @@ CREATE TABLE IF NOT EXISTS `questions` (
 --
 
 INSERT INTO `questions` (`qid`, `question`) VALUES
-(1, 'Golf course of the Year above 400 AED'),
-(2, 'Golf course of the Year under 400 AED');
+(1, 'F&B Outlet of the Year\r\n\r\n'),
+(2, 'Golf Hole of the Year ');
 
 -- --------------------------------------------------------
 
@@ -86,55 +102,7 @@ CREATE TABLE IF NOT EXISTS `vote` (
   `email` varchar(100) NOT NULL,
   `phone` varchar(20) NOT NULL,
   PRIMARY KEY (`vote_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
-
---
--- Dumping data for table `vote`
---
-
-INSERT INTO `vote` (`vote_id`, `qid`, `option_id`, `vote_sign`, `name`, `email`, `phone`) VALUES
-(1, 1, 1, '2013-09-05 17:07:01', '300x250 First One', 'aghoshx@gmail.com', '917736699979'),
-(2, 2, 5, '2013-09-05 17:07:01', '300x250 First One', 'aghoshx@gmail.com', '917736699979'),
-(3, 1, 2, '2013-09-05 17:07:16', 'Grabber', 'aghoshx@gmail.com', '917736699979'),
-(4, 2, 5, '2013-09-05 17:07:16', 'Grabber', 'aghoshx@gmail.com', '917736699979'),
-(5, 1, 1, '2013-09-05 17:07:33', 'Grabber', 'aghoshx@gmail.com', '917736699979'),
-(6, 2, 5, '2013-09-05 17:07:33', 'Grabber', 'aghoshx@gmail.com', '917736699979'),
-(7, 1, 3, '2013-09-05 17:07:49', '300x250 First One', 'aghoshx@gmail.com', '917736699979'),
-(8, 2, 7, '2013-09-05 17:07:49', '300x250 First One', 'aghoshx@gmail.com', '917736699979'),
-(9, 1, 1, '2013-09-05 17:19:55', '', '', ''),
-(10, 2, 5, '2013-09-05 17:19:55', '', '', ''),
-(11, 1, 2, '2013-09-05 17:19:59', '', '', ''),
-(12, 2, 5, '2013-09-05 17:19:59', '', '', ''),
-(13, 1, 3, '2013-09-05 17:20:02', '', '', ''),
-(14, 2, 5, '2013-09-05 17:20:02', '', '', ''),
-(15, 1, 4, '2013-09-05 17:20:04', '', '', ''),
-(16, 2, 5, '2013-09-05 17:20:04', '', '', ''),
-(17, 1, 1, '2013-09-05 17:20:06', '', '', ''),
-(18, 2, 5, '2013-09-05 17:20:06', '', '', ''),
-(19, 1, 1, '2013-09-05 17:20:08', '', '', ''),
-(20, 2, 6, '2013-09-05 17:20:08', '', '', ''),
-(21, 1, 1, '2013-09-05 17:20:10', '', '', ''),
-(22, 2, 6, '2013-09-05 17:20:10', '', '', ''),
-(23, 1, 1, '2013-09-05 17:20:10', '', '', ''),
-(24, 2, 6, '2013-09-05 17:20:10', '', '', ''),
-(25, 1, 1, '2013-09-05 17:20:10', '', '', ''),
-(26, 2, 6, '2013-09-05 17:20:10', '', '', ''),
-(27, 1, 1, '2013-09-05 17:20:10', '', '', ''),
-(28, 2, 6, '2013-09-05 17:20:10', '', '', ''),
-(29, 1, 1, '2013-09-05 17:20:12', '', '', ''),
-(30, 2, 7, '2013-09-05 17:20:12', '', '', ''),
-(31, 1, 1, '2013-09-05 17:20:12', '', '', ''),
-(32, 2, 7, '2013-09-05 17:20:12', '', '', ''),
-(33, 1, 1, '2013-09-05 17:20:12', '', '', ''),
-(34, 2, 7, '2013-09-05 17:20:12', '', '', ''),
-(35, 1, 1, '2013-09-05 17:20:12', '', '', ''),
-(36, 2, 7, '2013-09-05 17:20:12', '', '', ''),
-(37, 1, 1, '2013-09-05 17:20:14', '', '', ''),
-(38, 2, 8, '2013-09-05 17:20:14', '', '', ''),
-(39, 1, 1, '2013-09-05 17:20:16', '', '', ''),
-(40, 2, 5, '2013-09-05 17:20:16', '', '', ''),
-(41, 1, 1, '2013-09-05 17:20:18', '', '', ''),
-(42, 2, 6, '2013-09-05 17:20:18', '', '', '');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Constraints for dumped tables

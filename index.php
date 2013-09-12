@@ -263,6 +263,9 @@
 					<div class="section-title flaot-L CondMedium"><a id="xxsponsor" href="#"><span class="Cond">MEGA</span>  <span class="mred">SPNOSORS</span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c sponsors">						
+						<div style="width:173px">[Category Sponsor]</div>
+						<a href="#" target="_blank" class="spons spons_0"></a>
+						<div style="width:192px">[In Association With]</div>
 						<a href="#" target="_blank" class="spons spons_1"></a>
 						<a href="#" target="_blank" class="spons spons_2"></a>
 						<a href="#" target="_blank" class="spons spons_3"></a>
@@ -337,7 +340,7 @@
 										foreach($q['options'] as $o) { 
 											++$j;
 											?>
-											<div class="v_option">											
+											<div class="v_option" <?php if(($j-1)%4==0) echo 'style="margin: 0 0 15px 0;"'; ?>>											
 												<img src="<?php echo $o['file_name']; ?>" />
 												<p><?php echo $o['choice']; ?></p>
 												<a class="rad_select" id="question-<?php echo $i.'-'.$j ?>" href="#">SELECT</a>
