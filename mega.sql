@@ -19,6 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `mega`
 --
+DROP DATABASE IF EXISTS `mega`; 
 CREATE DATABASE IF NOT EXISTS `mega` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `mega`;
 
