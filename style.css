@@ -281,11 +281,14 @@ input[type="text"] {
 	height : 75px;
 }
 .v_option p {
-	float: right;
-	width: 115px;
-	color: #333;
-	font-weight: bold;
-	font-size: 12px;
+float: right;
+width: 120px;
+color: #333;
+font-weight: bold;
+font-size: 20px;
+line-height: 26px;
+text-align: left;
+display: block;
 }
 .v_option a {
 	display: block;
