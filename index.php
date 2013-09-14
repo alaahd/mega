@@ -299,8 +299,8 @@
 					<div class="section-title flaot-L CondMedium"><a id="xxcontact" href="#"><span class="Cond">CONTACT</span>  <span class="mred">US</span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c sponsors">	
-						<h3><a class="mred contact_icon contact_icon_1" href="mailto:mega@sport360.com"> mega@sport360.com</a></h3>
 						<h3><a class="mred contact_icon contact_icon_2" href="mailto:mega@sport360.com"> mega@sport360.com</a></h3>
+						<h3><a class="mred contact_icon contact_icon_1" href="mailto:mega@sport360.com">Call Ollie on +971 55 3013340</a></h3>
 					</div>
 				</div>
 				<div class="features vfeatures">
@@ -313,7 +313,7 @@
 						foreach($questions as $q) {
 							++$i;
 							?>
-							<li><a href="#question-<?php echo $i ?>"><?php echo $i.'.  '.$q['question'] ?></a></li>
+							<li><a class="CondMedium" href="#question-<?php echo $i ?>"><?php echo $i.'.  '.$q['question'] ?></a></li>
 							<?php
 								if($i == (int)count($questions)/2) {
 									echo '</ul><ul class="right-list">';
@@ -396,6 +396,8 @@
 					</div>
 				</div>	
 			</div>	
+			<?php 
+			/*
 			<div class="footer-ad">
 				<div id="block-block-251" class="clearfix block block-block">
 					<div class="content">
@@ -407,7 +409,8 @@
 					</div>
 				</div>
 			</div>
-
+			*/
+			?>
 			<div id="footer" class="clearfix clear">
 				<div id="footer-links-wrapper">
 					<div id="footer-menu-primary">

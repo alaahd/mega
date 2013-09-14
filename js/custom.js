@@ -7,9 +7,9 @@ if(typeof jQuery=='undefined')
     headTag.appendChild(jqTag);
 }
 jQuery(document).ready(function() {
-	jQuery('.rad_select').click(function(e){
+	jQuery('.v_option').click(function(e){
 		e.preventDefault();
-		var v_option = jQuery(this).parents('.v_option');
+		var v_option = jQuery(this);
 		var options_wrap = jQuery(this).parents('.options_wrap');
 		
 		jQuery(v_option).find('.radio_control').prop('checked', true);		
@@ -19,8 +19,8 @@ jQuery(document).ready(function() {
 		jQuery(options_wrap).find('.v_option').removeClass('op_selected');		
 		
 		jQuery(v_option).addClass('op_selected');
-		jQuery(this).addClass('xelected');
-		jQuery(this).text('SELECTED');
+		jQuery(this).find('.rad_select').addClass('xelected');
+		jQuery(this).find('.rad_select').text('SELECTED');
 	});
 	
 	jQuery('.v_option .radio_control').change(function(e){

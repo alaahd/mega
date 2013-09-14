@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: 'ff-din-web-condensed';
     src: url('font/ff_din_condensed_regular-webfont.eot');
@@ -8,9 +9,13 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*/
 .clearfix {
 	clear: both;
+}
+#block-nice_menus-1 #nice-menu-1 li a:hover {
+	color: #fff !important;
+	background: #cc2029 url(http://sport360.com/sites/all/themes/openpublish_theme/images/new-menu/bg-nav-active-sep.gif) no-repeat 50% 0 !important;
 }
 .header_swf {float: left;width: 764px;height: 394px;overflow:hidden;background:url(img/header_swf.png) no-repeat}
 .vote_bu_header {float:right; width:207px;height : 393px;display: block;background:url(img/vote.jpg) no-repeat; position: relative;
@@ -38,9 +43,14 @@ left: -1px;}
 	line-height: 21px;
 	font-family: Arial, 'Times New Roman', serif;
 }
-.vote_con_c li {
+.questions li {
 	margin:0 0 15px 0;
 	list-style: none;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.questions li a:hover{
+	text-decoration: underline;
 }
 .vote_banner {	
 	background: url(img/main.jpg) no-repeat;
@@ -66,7 +76,7 @@ left: -1px;}
 }
 .vfeatures .section-title {
 	width : auto !important;
-	padding:0 10px;
+	padding:5px 13px;
 }
 .vfeatures .section-underline,
 .vfeatures {
@@ -177,15 +187,15 @@ a.lang_ar_link {
 }
 .spons {
 	display : inline-block;
-	width : 160px;
-	height : 113px;
+	width : 120px;
+	height : 85px;
 	margin : 0 10px 0 0;
 	padding:0 15px 0 0;
 	border-right:3px solid #eee;
 	background-size: contain;
 	background-repeat:no-repeat;
 }
-.sponsors {	padding: 30px 0 !important; }
+.sponsors {	padding: 0 0 30px 0 !important; }
 .sponsors  div {	
 	color: #333;
 	background: #fafafa;
@@ -202,10 +212,10 @@ a.lang_ar_link {
 	background : url('img/contact-icon.png') no-repeat;
 	display : block;
 	height : 16px;
-	padding:0 0 0 20px;
+	padding:0 0 0 25px;
 	vertical-align: -webkit-baseline-middle;
 	line-height: 16px;
-	font-size: 13px;
+	font-size: 16px;
 }
 .contact_icon_2 {
 	background-position: 0 -16px;
@@ -255,7 +265,10 @@ input[type="text"] {
 	background: #000 url(http://www.sport360.com/sites/all/themes/openpublish_theme/images/new-menu/bg-nav-sep.gif) right no-repeat !important; 
 	font-size: 22px !important;
 }
-
+.vote_con_c li {
+	margin-bottom: 15px;
+	list-style: none
+}
 .menu-799 a {
 	min-width:205px !important;
 }
@@ -263,13 +276,14 @@ input[type="text"] {
 	display : none !important;
 }
 .v_option {
-	width: 202px;
+	width: 218px;
 	height: 140px;
 	background: #fafafa;
 	float: left;
 	margin: 0 0 15px 17px;
-	padding: 6px;
+	padding: 6px 0 6px 6px;
 	border: 3px solid #ddd;
+	cursor: pointer;
 	position: relative;
 }
 .v_option:first-child {
@@ -337,4 +351,10 @@ display: block;
 	color: rgb(37, 99, 59);
 	border: 1px solid rgb(1, 70, 28);
 	display : none
+}
+.form-item label {
+	font-family: ff-din-web-condensed,sans-serif;
+	font-weight: 600;
+	font-size: 19px;
+	text-transform: uppercase;
 }
