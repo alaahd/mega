@@ -39,7 +39,13 @@ else {
 	$return['msg'] = 'Database Error: ' . $errors[2];												
 }	
 if($debug)  echo json_encode($return);
-			/*
+/*
+$dbs = $dbh->prepare("SELECT * FROM questions WHERE qid = '$qid';");
+		$dbs->execute();
+		$rows=$dbs->fetchAll(PDO::FETCH_ASSOC);	
+		$rows=$rows[0];	
+		var_dump($rows);
+
 $questions = array(
 	array(
 		'question' => 'Golf course of the Year above 400 AED',

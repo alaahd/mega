@@ -36,11 +36,10 @@ jQuery(document).ready(function() {
 		if(from_valid_one() && from_valid_two()) {
 			$.post("vote.php", $('#voteForm').serialize(), function(data) {
 				if(data.error) {
-					jQuery('.error_vote').show();
+					jQuery('.error_vote').slideDown();
 				}
-				else {
-					formx.slideUp();					
-					jQuery('.success_vote').show();
+				else {										
+					jQuery('.success_vote').slideDown();
 				}				
 			}, 'json');
 		}		
