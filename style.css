@@ -358,3 +358,7 @@ display: block;
 	font-size: 19px;
 	text-transform: uppercase;
 }
+
+#block-nice_menus-1 #nice-menu-1 li.first {
+	width: 215px;
+}
