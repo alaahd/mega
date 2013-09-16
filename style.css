@@ -313,14 +313,15 @@ input[type="text"] {
 	height : 75px;
 }
 .v_option p {
-float: right;
-width: 120px;
-color: #333;
-font-weight: bold;
-font-size: 20px;
-line-height: 26px;
-text-align: left;
-display: block;
+	float: right;
+	width: 130px;
+	color: #333;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 21px;
+	text-align: left;
+	display: block;
+	padding: 0 4px;
 }
 .v_option a {
 	display: block;
