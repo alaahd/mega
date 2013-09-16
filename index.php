@@ -54,6 +54,27 @@
     
 	<link href="https://plus.google.com/101766922067071447547" rel="publisher" />
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/ui-lightness/jquery-ui.css" /> 
+	<!-- Start: GPT Sync -->
+	<script type='text/javascript'>
+		var gptadslots=[];
+		(function(){
+			var useSSL = 'https:' == document.location.protocol;
+			var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+			document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+		})();
+	</script>
+
+	<script type="text/javascript">
+		
+			//Adslot 1 declaration
+			gptadslots[1]= googletag.defineSlot('/4660810/en-sport360-mega', [[728,90]],'div-gpt-ad-723216161127733715-1').addService(googletag.pubads());
+
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().enableSyncRendering();
+			googletag.enableServices();
+
+	</script>
+	<!-- End: GPT -->
 </head>
 
 <body class="sidebar-right front-page front not-logged-in page-node one-sidebar sidebar-right" >
@@ -164,10 +185,14 @@
 									<div class="view-content">
 										<div class="top_ads">
 											<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-												<!-- golf_728 --><!-- golf_728 -->
-												<script type='text/javascript'>
-													GA_googleFillSlot("golf_728");
-												</script>  </div>
+												<!-- Beginning Sync AdSlot 1 for Ad unit en-sport360-mega ### size: [[728,90]]  -->
+												<div id='div-gpt-ad-723216161127733715-1'>
+													<script type='text/javascript'>
+														googletag.display('div-gpt-ad-723216161127733715-1');
+													</script>
+												</div>
+												<!-- End AdSlot 1 -->
+											</div>
 										</div>
 									</div>
 								</div>
