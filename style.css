@@ -285,8 +285,17 @@ input[type="text"] {
 	display : none !important;
 }
 .v_option {
-	width: 218px;
+/*	width: 218px;
 	height: 140px;
+	background: #fafafa;
+	float: left;
+	margin: 0 0 15px 17px;
+	padding: 6px 0 6px 6px;
+	border: 3px solid #ddd;
+	cursor: pointer;
+	position: relative;*/
+	width: 218px;
+	height: 110px;
 	background: #fafafa;
 	float: left;
 	margin: 0 0 15px 17px;
