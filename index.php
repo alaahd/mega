@@ -27,6 +27,10 @@
       z-index: 1;
     }  
 }
+
+.toplogin {
+	overflow: hidden;
+}
 </style>
 
 
