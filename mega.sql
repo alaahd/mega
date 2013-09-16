@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 16, 2013 at 05:39 PM
+-- Generation Time: Sep 16, 2013 at 05:42 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -239,30 +239,9 @@ CREATE TABLE IF NOT EXISTS `vote` (
   `name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `phone` varchar(20) NOT NULL,
+  `location` varchar(70) NOT NULL,
   PRIMARY KEY (`vote_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
-
---
--- Dumping data for table `vote`
---
-
-INSERT INTO `vote` (`vote_id`, `qid`, `option_id`, `vote_sign`, `name`, `email`, `phone`) VALUES
-(1, 1, 9, '2013-09-15 01:02:28', '300x250 First One', 'irishjohnny', '919249445541'),
-(2, 2, 21, '2013-09-15 01:02:28', '300x250 First One', 'irishjohnny', '919249445541'),
-(3, 1, 11, '2013-09-15 01:02:51', '300x250 First One', 'irishjohnny', '919249445541'),
-(4, 2, 14, '2013-09-15 01:02:52', '300x250 First One', 'irishjohnny', '919249445541'),
-(5, 1, 10, '2013-09-15 01:04:40', '300x250 First One', 'irishjohnny', '919249445541'),
-(6, 2, 19, '2013-09-15 01:04:40', '300x250 First One', 'irishjohnny', '919249445541'),
-(7, 1, 9, '2013-09-15 01:27:32', '300x250 First One', 'aghoshx', '917736699979'),
-(8, 2, 21, '2013-09-15 01:27:32', '300x250 First One', 'aghoshx', '917736699979'),
-(9, 1, 9, '2013-09-15 01:28:12', '300x250 First One', 'aghoshx', '917736699979'),
-(10, 2, 21, '2013-09-15 01:28:12', '300x250 First One', 'aghoshx', '917736699979'),
-(11, 1, 9, '2013-09-15 01:29:36', '300x250 First One', 'aghoshx', '917736699979'),
-(12, 2, 21, '2013-09-15 01:29:36', '300x250 First One', 'aghoshx', '917736699979'),
-(13, 1, 9, '2013-09-15 01:30:10', '300x250 First One', 'aghoshx', '917736699979'),
-(14, 2, 21, '2013-09-15 01:30:10', '300x250 First One', 'aghoshx', '917736699979'),
-(15, 1, 9, '2013-09-15 01:30:29', '300x250 First One', 'aghoshx', '917736699979'),
-(16, 2, 21, '2013-09-15 01:30:29', '300x250 First One', 'aghoshx', '917736699979');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Constraints for dumped tables
