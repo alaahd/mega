@@ -415,6 +415,27 @@
 										<p class="error_text">Phone no. should not be blank</p>
 									</div>
 								</div>
+								<div class="floating-field">
+									<div class="form-item xfg" id="edit-Mobile-wrapper">
+										<label for="edit-Mobile">Location: </label>
+										<select class="ag_select" name="location">
+											<?php 
+											$dbs = $dbh->prepare("SELECT * FROM location;");
+											$dbs->execute();
+											if($dbs->errorCode() == 0) 
+											{
+												$rows=$dbs->fetchAll(PDO::FETCH_ASSOC);	
+												foreach($rows as $r) {	
+													?>
+													<option><?php echo $r['location'] ?></option>
+													<?php
+												}
+											}	
+											?>
+										</select>
+										<p class="error_text">Phone no. should not be blank</p>
+									</div>
+								</div>
 								<div class="standalone-field field-clear"></div>
 								<div class="clearfix submite_sub"><br/></div>
 								<input type="button" name="op" id="edit-submit" style="margin:20px 0 0 0" value="Submit" class="form-submit">

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 16, 2013 at 05:42 PM
+-- Generation Time: Sep 16, 2013 at 06:00 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -21,6 +21,34 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `mega` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `mega`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `location`
+--
+
+CREATE TABLE IF NOT EXISTS `location` (
+  `location` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `location`
+--
+
+INSERT INTO `location` (`location`) VALUES
+('Abu Dhabi '),
+('Al Ain '),
+('Dubai '),
+('Northern Emirates '),
+('Doha '),
+('Bahrain '),
+('Jeddah '),
+('Riyadh '),
+('Muscat '),
+('Europe '),
+('Africa '),
+('Other ');
 
 -- --------------------------------------------------------
 

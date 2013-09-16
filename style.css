@@ -255,6 +255,15 @@ input[type="text"] {
 	padding: 10px;
 	font-size: 16px;
 }
+.ag_select {
+	border: 1px solid #DADADA;
+	color: #808285;
+	font-size: 1.25em;
+	height: 40px;
+	padding: 5px 3px 5px 5px;
+	width: 471px;	
+	font-size: 16px;
+}
 .vote_menu {
 	position : relative;
 	top: -1px;

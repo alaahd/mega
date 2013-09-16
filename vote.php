@@ -7,8 +7,8 @@
 }
 require_once('config.php');
 foreach($_POST['qid'] as $qid=>$option_id) {
-	$sth = $dbh->prepare("INSERT INTO `vote` (`qid`, `option_id`, `name`, `email`, `phone`) VALUES (?, ?, ?, ?, ?);"); 
-	$sth_data = array($qid, $option_id, clean_string($_POST['name']), clean_string($_POST['email']), clean_string($_POST['mobile']));	
+	$sth = $dbh->prepare("INSERT INTO `vote` (`qid`, `option_id`, `name`, `email`, `phone`, `location`) VALUES (?, ?, ?, ?, ?, ?);"); 
+	$sth_data = array($qid, $option_id, clean_string($_POST['name']), clean_string($_POST['email']), clean_string($_POST['mobile']), clean_string($_POST['location']));	
 	$sth->execute($sth_data);
 	if($sth->errorCode() == 0) {
 		$return['error'] = false;
