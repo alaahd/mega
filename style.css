@@ -380,3 +380,7 @@ input[type="text"] {
 #block-nice_menus-1 #nice-menu-1 li.first {
 	width: 215px;
 }
+
+#question-2 .v_option {
+	height: 170px;
+}
