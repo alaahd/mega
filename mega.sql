@@ -180,13 +180,13 @@ INSERT INTO `options` (`option_id`, `qid`, `choice`, `file_name`) VALUES
 (104, 10, 'Pro Golf (Golf House)', 'img/logos/golf.jpg'),
 (105, 10, 'E-Golf Outlet	', 'img/logos/egolf.jpg'),
 (106, 10, 'Ecco', 'img/logos/ecco.jpg'),
-(107, 2, 'HSBC Championships (In association with ADTCA, IMG & Abu Dhabi Golf Club)', 'img/logos/hsbc.jpg'),
-(108, 2, 'DP World Championships (In association with European Tour &Jumeirah Golf Estates)', 'img/logos/dp.jpg'),
-(109, 2, 'Ras Al Khaimah Classic - Mena Tour - (in association with the Towers Links Golf Club)', 'img/logos/mena.jpg'),
-(110, 2, 'Abu Dhabi Golf Citizen Open - Mena Tour - (in association with Saadiyat Beach Golf Club)', 'img/logos/mena.jpg'),
-(111, 2, 'ShaikhMaktoum Dubai Open - Mena Tour - (in association with Al Badia Golf Club)', 'img/logos/mena.jpg'),
-(112, 2, 'Dubai Desert Classic - (in association with Golf in Dubai & Emirates Golf Club)', 'img/logos/omega.jpg'),
-(113, 2, 'Dubai Ladies Masters - (in association with Golf in Dubai & Emirates Golf Club)', 'img/logos/ladies.jpg');
+(107, 2, 'HSBC Championships <span>(In association with ADTCA, IMG & Abu Dhabi Golf Club)</span>', 'img/logos/hsbc.jpg'),
+(108, 2, 'DP World Championships <span>(In association with European Tour &Jumeirah Golf Estates)</span>', 'img/logos/dp.jpg'),
+(109, 2, 'Ras Al Khaimah Classic - Mena Tour - <span>(In association with the Towers Links Golf Club)</span>', 'img/logos/mena.jpg'),
+(110, 2, 'Abu Dhabi Golf Citizen Open - Mena Tour - <span>(In association with Saadiyat Beach Golf Club)</span>', 'img/logos/mena.jpg'),
+(111, 2, 'ShaikhMaktoum Dubai Open - Mena Tour - <span>(In association with Al Badia Golf Club)</span>', 'img/logos/mena.jpg'),
+(112, 2, 'Dubai Desert Classic - <span>(In association with Golf in Dubai & Emirates Golf Club)</span>', 'img/logos/omega.jpg'),
+(113, 2, 'Dubai Ladies Masters - <span>(In association with Golf in Dubai & Emirates Golf Club)</span>', 'img/logos/ladies.jpg');
 
 -- --------------------------------------------------------
 
