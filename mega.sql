@@ -141,7 +141,7 @@ INSERT INTO `options` (`option_id`, `qid`, `choice`, `file_name`) VALUES
 (65, 7, 'Arabian Ranches Golf Club <span>(Ranches restaurant)</span>', 'img/logos/ranches.jpg'),
 (66, 7, 'Dubai Creek Golf and Yacht Club <span>(Legends)</span>', 'img/logos/creek.jpg'),
 (67, 7, 'Emirates Golf Club <span>(Le Classique)</span>', 'img/logos/emirates.jpg'),
-(68, 7, 'Yas Links <span>(Hickory’s)</span>', 'img/logos/yas.jpg'),
+(68, 7, 'Yas Links <span>(Hickory`s)</span>', 'img/logos/yas.jpg'),
 (69, 7, 'The Address Montgomerie <span>(Links)</span>', 'img/logos/address.jpg'),
 (70, 7, 'Saadiyat Beach Golf Club <span>(Hawksbill Restaurant)</span>', 'img/logos/saadiyat.jpg'),
 (71, 7, 'The Els Club <span>(261 Restaurant)</span>', 'img/logos/els.jpg'),
