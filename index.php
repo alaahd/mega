@@ -48,7 +48,7 @@
 	<link type="text/css" rel="stylesheet" media="all" href="http://www.sport360.com//sites/default/files/css/css_6b87192f8788bf4d40fcec90d60458f5.css" />
 	<link type="text/css" rel="stylesheet" media="screen" href="http://www.sport360.com//sites/default/files/css/css_5e6eec3cc9950d8c3ed12a8e7948432c.css" />
 	<link type="text/css" rel="stylesheet" media="print" href="http://static.sport360.com/sites/all/themes/openpublish_theme/css/print.css?v=1.0"/>
-	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v7" />
+	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v8" />
 	<script type="text/javascript" src="http://use.typekit.com/srl7xxo.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="http://www.sport360.com//sites/default/files/js/js_94589f9a906b54e9cc10035e6f114243.js"></script>
@@ -267,8 +267,6 @@
 				</div>
 				<a href="#xxvote" class="vote_bu_header"></a>	
 				<div class="clearfix"></div>
-
-				<p>Voting open for all. Only 1 vote per category permitted</p>
 				
 				<div id="block-nice_menus-1" class="vote_menu clearfix block block-nice_menus">
 					<div class="content">
@@ -338,6 +336,7 @@
 					<div class="section-title flaot-L CondMedium"><a id="xxvote" href="#"><span class="Cond">CAST</span>  <span class="mred">YOUR VOTE</span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c questions">	
+						<p style="margin: 30px 3px">Terms & Conditions – Voting open for all. Only 1 vote per category permitted</p>
 						<ul class="left-list">
 						<?php
 						$i = 0;						
