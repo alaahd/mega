@@ -19,6 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `mega`
 --
+DROP DATABASE IF EXISTS `mega`;
 CREATE DATABASE IF NOT EXISTS `mega` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `mega`;
 
@@ -32,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `location` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `location` varchar(60) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;
 
 --
 -- Dumping data for table `location`
@@ -66,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `options` (
   `file_name` longtext NOT NULL,
   PRIMARY KEY (`option_id`),
   KEY `qid` (`qid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=114 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;
 
 --
 -- Dumping data for table `options`
@@ -197,7 +198,7 @@ CREATE TABLE IF NOT EXISTS `questions` (
   `qid` int(11) NOT NULL AUTO_INCREMENT,
   `question` longtext NOT NULL,
   PRIMARY KEY (`qid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;
 
 --
 -- Dumping data for table `questions`
@@ -231,7 +232,7 @@ CREATE TABLE IF NOT EXISTS `vote` (
   `phone` varchar(20) NOT NULL,
   `location` varchar(70) NOT NULL,
   PRIMARY KEY (`vote_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;
 
 --
 -- Constraints for dumped tables
