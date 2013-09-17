@@ -259,7 +259,7 @@
 			<div class="ag_content">					
 				<div class="header_swf"> 
 					<script type="text/javascript">
-						swfobject.embedSWF("img/header.swf", "flash_alt", "764", "394", "9.0.0");
+						swfobject.embedSWF("img/mega_header.swf", "flash_alt", "764", "394", "9.0.0");
 					</script>
 					<div id="flash_alt" class="vote_banner">
 						<a href="#xxvote" class="vote_button" href="#xxvote">CAST YOUR VOTE!</a>
