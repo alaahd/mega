@@ -183,10 +183,10 @@ INSERT INTO `options` (`option_id`, `qid`, `choice`, `file_name`) VALUES
 (107, 2, 'HSBC Championships (In association with ADTCA, IMG & Abu Dhabi Golf Club)', 'img/logos/hsbc.jpg'),
 (108, 2, 'DP World Championships (In association with European Tour &Jumeirah Golf Estates)', 'img/logos/dp.jpg'),
 (109, 2, 'Ras Al Khaimah Classic - Mena Tour - (in association with the Towers Links Golf Club)', 'img/logos/mena.jpg'),
-(110, 2, 'Abu Dhabi Golf Citizen Open – Mena Tour – (in association with Saadiyat Beach Golf Club)', 'img/logos/mena.jpg'),
-(111, 2, 'ShaikhMaktoum Dubai Open - Mena Tour – (in association with Al Badia Golf Club)', 'img/logos/mena.jpg'),
-(112, 2, 'Dubai Desert Classic – (in association with Golf in Dubai & Emirates Golf Club)', 'img/logos/omega.jpg'),
-(113, 2, 'Dubai Ladies Masters – (in association with Golf in Dubai & Emirates Golf Club)', 'img/logos/ladies.jpg');
+(110, 2, 'Abu Dhabi Golf Citizen Open - Mena Tour - (in association with Saadiyat Beach Golf Club)', 'img/logos/mena.jpg'),
+(111, 2, 'ShaikhMaktoum Dubai Open - Mena Tour - (in association with Al Badia Golf Club)', 'img/logos/mena.jpg'),
+(112, 2, 'Dubai Desert Classic - (in association with Golf in Dubai & Emirates Golf Club)', 'img/logos/omega.jpg'),
+(113, 2, 'Dubai Ladies Masters - (in association with Golf in Dubai & Emirates Golf Club)', 'img/logos/ladies.jpg');
 
 -- --------------------------------------------------------
 
