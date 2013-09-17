@@ -321,7 +321,7 @@
 					<div class="section-title flaot-L CondMedium"><a id="xxaward" href="#"><span class="Cond">ATTEND THE</span>  <span class="mred">AWARDS</span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c sponsors">	
-						<p>Information about the Gala Event dinner which will be held on the 11th of December 2013 will be released by early October.</p>
+						<p style="padding-top: 14px">Information about the Gala Event dinner which will be held on the <strong>11th of December 2013</strong> will be released by early October.</p>
 					</div>
 				</div>
 				<div class="features vfeatures">
