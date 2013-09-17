@@ -289,7 +289,7 @@
 					</div>	
 				</div>
 				<div class="features vfeatures">
-					<div class="section-title flaot-L CondMedium"><a id="xxsponsor" href="#"><span class="Cond">MEGA</span>  <span class="mred">SPNOSORS</span></a></div>
+					<div class="section-title flaot-L CondMedium"><a id="xxsponsor" href="#"><span class="Cond">MEGA</span>  <span class="mred">SPONSORS</span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c sponsors">						
 						<div style="width:173px">[Category Sponsor]</div>
