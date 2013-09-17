@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 16, 2013 at 06:00 PM
+-- Generation Time: Sep 17, 2013 at 06:09 AM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -19,7 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `mega`
 --
-DROP DATABASE IF EXISTS `mega`;
 CREATE DATABASE IF NOT EXISTS `mega` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `mega`;
 
@@ -30,26 +29,29 @@ USE `mega`;
 --
 
 CREATE TABLE IF NOT EXISTS `location` (
-  `location` varchar(60) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `location` varchar(60) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `location`
 --
 
-INSERT INTO `location` (`location`) VALUES
-('Abu Dhabi '),
-('Al Ain '),
-('Dubai '),
-('Northern Emirates '),
-('Doha '),
-('Bahrain '),
-('Jeddah '),
-('Riyadh '),
-('Muscat '),
-('Europe '),
-('Africa '),
-('Other ');
+INSERT INTO `location` (`id`, `location`) VALUES
+(1, 'Abu Dhabi '),
+(2, 'Al Ain '),
+(3, 'Dubai '),
+(4, 'Northern Emirates '),
+(5, 'Doha '),
+(6, 'Bahrain '),
+(7, 'Jeddah '),
+(8, 'Riyadh '),
+(9, 'Muscat '),
+(10, 'Europe '),
+(11, 'Africa '),
+(12, 'Kuwait'),
+(13, 'Other');
 
 -- --------------------------------------------------------
 
@@ -64,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `options` (
   `file_name` longtext NOT NULL,
   PRIMARY KEY (`option_id`),
   KEY `qid` (`qid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=175 ;
 
 --
 -- Dumping data for table `options`
@@ -235,7 +237,7 @@ CREATE TABLE IF NOT EXISTS `questions` (
   `qid` int(11) NOT NULL AUTO_INCREMENT,
   `question` longtext NOT NULL,
   PRIMARY KEY (`qid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `questions`
@@ -270,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `vote` (
   `phone` varchar(20) NOT NULL,
   `location` varchar(70) NOT NULL,
   PRIMARY KEY (`vote_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Constraints for dumped tables
