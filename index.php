@@ -328,8 +328,8 @@
 					<div class="section-title flaot-L CondMedium"><a id="xxcontact" href="#"><span class="Cond">CONTACT</span>  <span class="mred">US</span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c sponsors">	
-						<h3><a class="mred contact_icon contact_icon_2" href="mailto:mega@sport360.com">Email – mega@sport360.com</a></h3>
-						<h3><a class="mred contact_icon contact_icon_1" href="javascript:void(0)">Telephone - (+971) 4 395 8833</a></h3>
+						<h3><a class="mred contact_icon contact_icon_2" href="mailto:mega@sport360.com">mega@sport360.com</a></h3>
+						<h3><a class="mred contact_icon contact_icon_1" href="javascript:void(0)">(+971) 4 395 8833</a></h3>
 					</div>
 				</div>
 				<div class="features vfeatures">
