@@ -427,7 +427,7 @@
 												$rows=$dbs->fetchAll(PDO::FETCH_ASSOC);	
 												foreach($rows as $r) {	
 													?>
-													<option><?php echo $r['location'] ?></option>
+													<option value="<?php echo $r['location'] ?>"><?php echo $r['location'] ?></option>
 													<?php
 												}
 											}	
