@@ -345,7 +345,6 @@ input[type="text"] {
 	background : #fff !important;	
 }
 .error_overlay {
-	padding: 15px 20px;
 	background: rgba(248, 171, 171, 0.5);
 }
 .error_text {
