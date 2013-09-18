@@ -36,13 +36,14 @@ jQuery(document).ready(function() {
 		jQuery('.error_text').hide();
 		console.log(from_valid_one());
 		console.log(from_valid_two());
-		if(from_valid_one() && from_valid_two()) {
+		if(from_valid_one() && from_valid_two()) {			
 			$.post("vote.php", $('#voteForm').serialize(), function(data) {
 				if(data.error) {
 					jQuery('.error_vote').slideDown();
 				}
 				else {										
 					jQuery('.success_vote').slideDown();
+					$(formx).slideUp();
 				}				
 			}, 'json');
 		}		
