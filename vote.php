@@ -36,6 +36,7 @@ foreach($_POST['qid'] as $qid=>$option_id) {
 $email_message .= "Name: ".clean_string($_POST['name'])."<br/>";    
 $email_message .= "Email: ".clean_string($_POST['email'])."<br/>";
 $email_message .= "Telephone: ".clean_string($_POST['mobile'])."<br/>";
+$email_message .= "Location: ".clean_string($_POST['location'])."<br/>";
   
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
