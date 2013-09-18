@@ -275,7 +275,7 @@ input[type="text"] {
 	width:971px !important;
 }
 .vote_menu li a{
-	min-width:215px;
+	min-width:202px;
 	background: #000 url(http://www.sport360.com/sites/all/themes/openpublish_theme/images/new-menu/bg-nav-sep.gif) right no-repeat !important; 
 	font-size: 22px !important;
 }
@@ -284,7 +284,7 @@ input[type="text"] {
 	list-style: none
 }
 .menu-799 a {
-	min-width:205px !important;
+	min-width:204px !important;
 }
 .hide {
 	display : none !important;
@@ -380,10 +380,6 @@ input[type="text"] {
 	font-weight: 600;
 	font-size: 19px;
 	text-transform: uppercase;
-}
-
-#block-nice_menus-1 #nice-menu-1 li.first {
-	width: 215px;
 }
 
 #question-2 .v_option {
