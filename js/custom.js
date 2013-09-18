@@ -7,6 +7,7 @@ if(typeof jQuery=='undefined')
     headTag.appendChild(jqTag);
 }
 jQuery(document).ready(function() {
+	/* - Event is tied v_option and not rad_select - */
 	jQuery('.v_option').click(function(e){
 		e.preventDefault();
 		var v_option = jQuery(this);
@@ -22,10 +23,12 @@ jQuery(document).ready(function() {
 		jQuery(this).find('.rad_select').addClass('xelected');
 		jQuery(this).find('.rad_select').text('SELECTED');
 	});
-	
+	/*
+	- We don't need this - 
 	jQuery('.v_option .radio_control').change(function(e){
 		alert('me');
 	});
+	*/
 	jQuery('.form-submit').click(function(e){
 		e.preventDefault();
 		var formx = jQuery('#voteForm');
