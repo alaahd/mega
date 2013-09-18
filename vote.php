@@ -39,8 +39,9 @@ $email_message .= "Telephone: ".clean_string($_POST['mobile'])."<br/>";
   
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
+"MIME-Version: 1.0" . "\r\n".
+"Content-type:text/html;charset=iso-8859-1" . "\r\n".
 'X-Mailer: PHP/' . phpversion();
-
 @mail($email_to, $email_subject, $email_message, $headers);  
 		
 echo json_encode($return);
