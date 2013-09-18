@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 17, 2013 at 06:51 PM
+-- Generation Time: Sep 18, 2013 at 07:52 AM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.12
 
@@ -227,11 +227,24 @@ CREATE TABLE IF NOT EXISTS `vote` (
   `qid` int(11) NOT NULL,
   `option_id` int(11) NOT NULL,
   `vote_sign` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `phone` varchar(20) NOT NULL,
-  `location` varchar(70) NOT NULL,
-  PRIMARY KEY (`vote_id`)
+  `fk_voter_id` int(11) NOT NULL,
+  PRIMARY KEY (`vote_id`),
+  KEY `fk_voter_id` (`fk_voter_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `voters`
+--
+
+CREATE TABLE IF NOT EXISTS `voters` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(70) NOT NULL,
+  `email` varchar(70) NOT NULL,
+  `mobile` varchar(25) NOT NULL,
+  `location` bigint(20) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=0 ;
 
 --
@@ -243,6 +256,12 @@ CREATE TABLE IF NOT EXISTS `vote` (
 --
 ALTER TABLE `options`
   ADD CONSTRAINT `options_ibfk_1` FOREIGN KEY (`qid`) REFERENCES `questions` (`qid`);
+
+--
+-- Constraints for table `vote`
+--
+ALTER TABLE `vote`
+  ADD CONSTRAINT `vote_ibfk_1` FOREIGN KEY (`fk_voter_id`) REFERENCES `voters` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

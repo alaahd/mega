@@ -6,32 +6,42 @@
 	return $str;
 }
 require_once('config.php');
-foreach($_POST['qid'] as $qid=>$option_id) {
-	$sth = $dbh->prepare("INSERT INTO `vote` (`qid`, `option_id`, `name`, `email`, `phone`, `location`) VALUES (?, ?, ?, ?, ?, ?);"); 
-	$sth_data = array($qid, $option_id, clean_string($_POST['name']), clean_string($_POST['email']), clean_string($_POST['mobile']), clean_string($_POST['location']));	
-	$sth->execute($sth_data);
+$sth = $dbh->prepare("INSERT INTO `voters` (`name`, `email`, `mobile`, `location`) VALUES (?, ?, ?, ?);"); 
+	$sth_data = array(clean_string($_POST['name']), clean_string($_POST['email']), clean_string($_POST['mobile']), clean_string($_POST['location']));	
+	$sth->execute($sth_data);	 
+	$voter_id = $dbh->lastInsertId();	 
 	if($sth->errorCode() == 0) {
-		$return['error'] = false;
-		$return['msg'] ="Added vote to database";				
-		/*
-		- Send Results via email.		
-		*/
-		$dbs = $dbh->prepare("SELECT * FROM questions WHERE qid = '$qid';");
-		$dbs->execute();
-		$rows=$dbs->fetchAll(PDO::FETCH_ASSOC);	
-		$rows=$rows[0];	
-		$email_message .= '<h3>'.$rows['question'].'</h3>';
-		$options = $dbh->prepare("SELECT * FROM options WHERE option_id = '$option_id';");
-		$options->execute();
-		$options=$options->fetchAll(PDO::FETCH_ASSOC);	
-		$email_message .= 'VOTED : '.$options[0]['choice'].'<br/><br/>';
-	}
-	else {				
+		foreach($_POST['qid'] as $qid=>$option_id) {
+			$sth = $dbh->prepare("INSERT INTO `vote` (`qid`, `option_id`, `fk_voter_id`) VALUES (?, ?, ?);"); 
+			$sth_data = array($qid, $option_id, $voter_id);	
+			$sth->execute($sth_data);
+			if($sth->errorCode() == 0) {
+				$return['error'] = false;
+				$return['msg'] ="Added vote to database";				
+				/*
+				- Send Results via email.		
+				*/
+				$dbs = $dbh->prepare("SELECT * FROM questions WHERE qid = '$qid';");
+				$dbs->execute();
+				$rows=$dbs->fetchAll(PDO::FETCH_ASSOC);	
+				$rows=$rows[0];	
+				$email_message .= '<h3>'.$rows['question'].'</h3>';
+				$options = $dbh->prepare("SELECT * FROM options WHERE option_id = '$option_id';");
+				$options->execute();
+				$options=$options->fetchAll(PDO::FETCH_ASSOC);	
+				$email_message .= 'VOTED : '.$options[0]['choice'].'<br/><br/>';
+			}
+			else {				
+				$return['error'] = true;
+				$errors = $sth->errorInfo();
+				$return['msg'] = 'L2 : Database Error: ' . $errors[2];											
+			}
+		}
+	} else {
 		$return['error'] = true;
 		$errors = $sth->errorInfo();
-		$return['msg'] = 'Database Error: ' . $errors[2];											
-	}
-}	
+		$return['msg'] = 'L1 : Database Error: ' . $errors[2];											
+	}	
 // create email headers
 $email_message .= "Name: ".clean_string($_POST['name'])."<br/>";    
 $email_message .= "Email: ".clean_string($_POST['email'])."<br/>";
