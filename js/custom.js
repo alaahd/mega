@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
 				}
 				else {										
 					jQuery('.success_vote').slideDown();
-					$(formx).slideUp();
+					jQuery('.main-content-subscribe').slideUp('slow');
 				}				
 			}, 'json');
 		}		
