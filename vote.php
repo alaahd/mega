@@ -2,7 +2,7 @@
  function clean_string($str) {
 	$str = @strip_tags($str);
 	$str = @stripslashes($str);
-	$str = mysqli_real_escape_string($str);
+//	$str = mysqli_real_escape_string($str);
 	return $str;
 }
 require_once('config.php');
