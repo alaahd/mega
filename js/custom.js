@@ -39,6 +39,7 @@ jQuery(document).ready(function() {
 		if(from_valid_one() && from_valid_two()) {			
 			$.post("vote.php", $('#voteForm').serialize(), function(data) {
 				if(data.error) {
+					jQuery('.error_vote').text('Error in Voting');
 					jQuery('.error_vote').slideDown();
 				}
 				else {										
@@ -48,17 +49,21 @@ jQuery(document).ready(function() {
 			}, 'json');
 		}		
 	});
-	function from_valid_one() {
-		var flag = true;
+	function from_valid_one() {		
+		var tot = 0;
+		jQuery('.error_vote').hide();
 		jQuery('.options_wrap').each(function(index){
-			if(jQuery(this).find('.radio_control:checked').length == 0) {
-				jQuery(this).addClass('error_overlay');
-				jQuery(this).find('.error_text').show();
-				flag = false;
+			tot += jQuery(this).find('.radio_control:checked').length;				
+			if(tot > 0) {
 				return;
 			}
-		});	
-		return flag;
+		});
+		if(tot == 0) {
+			jQuery('.error_vote').text('You must vote in at least one category');
+			jQuery('.error_vote').slideDown();
+			return false;
+		}
+		return true;
 	}
 	function from_valid_two() {
 		var flag = true;
