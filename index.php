@@ -299,6 +299,7 @@
 						<a href="#" target="_blank" class="spons spons_2"></a>
 						<a href="#" target="_blank" class="spons spons_3"></a>
 						<a href="#" target="_blank" class="spons spons_4"></a>
+						<a href="#" target="_blank" class="spons spons_11"></a>
 						<div style="width:192px">[Official Media Partners]</div>
 						<span class="clearfix"></span>
 						<a href="#" target="_blank" class="spons spons_5"></a>
