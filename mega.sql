@@ -187,6 +187,10 @@ INSERT INTO `options` (`option_id`, `qid`, `choice`, `file_name`) VALUES
 (111, 2, 'ShaikhMaktoum Dubai Open - Mena Tour - <span>(In association with Al Badia Golf Club)</span>', 'img/logos/mena.jpg'),
 (112, 2, 'Dubai Desert Classic - <span>(In association with Golf in Dubai & Emirates Golf Club)</span>', 'img/logos/omega.jpg'),
 (113, 2, 'Dubai Ladies Masters - <span>(In association with Golf in Dubai & Emirates Golf Club)</span>', 'img/logos/ladies.jpg');
+(114, 8, 'Footjoy', 'img/logos/footjoy.jpg');
+(115, 8, 'Greg Norman', 'img/logos/norman.jpg');
+(116, 9, 'Ping', 'img/logos/ping.jpg');
+(117, 9, 'Titleist', 'img/logos/titleist.jpg');
 
 -- --------------------------------------------------------
 
