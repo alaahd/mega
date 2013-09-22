@@ -300,6 +300,7 @@
 						<a href="#" target="_blank" class="spons spons_3"></a>
 						<a href="#" target="_blank" class="spons spons_4"></a>
 						<a href="#" target="_blank" class="spons spons_11"></a>
+						<a href="#" target="_blank" class="spons spons_12"></a>
 						<div style="width:192px">[Official Media Partners]</div>
 						<span class="clearfix"></span>
 						<a href="#" target="_blank" class="spons spons_5"></a>
@@ -364,7 +365,9 @@
 									<div class="section-underline"></div>
 									<?php
 									$j = 0;
-									
+									if($i == 1) { ?>
+										<div class="fig_speech">(15th Hole, Par 4)</div>
+									<?php }
 									?>
 									<div class="options_wrap">	
 										<?php

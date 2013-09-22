@@ -199,6 +199,7 @@ a.lang_ar_link {
 	border-right:3px solid #eee;
 	background-size: contain;
 	background-repeat:no-repeat;
+	background-position: center;
 }
 .sponsors {	padding: 0 0 30px 0 !important; }
 .sponsors  div {	
@@ -236,7 +237,8 @@ a.lang_ar_link {
 .spons_8 { background-image:url('img/sponsors-v2-08.jpg') }
 .spons_9 { background-image:url('img/sponsors-v2-09.jpg') }
 .spons_10 { background-image:url('img/sponsors-v2-10.jpg') }
-.spons_11 { background-image:url('img/sponsors-v2-11.jpg') }
+.spons_11 {background-image: url('img/sponsors-v2-11.jpg');}
+.spons_12 {background-image: url('img/sponsors-v2-12.png');}
 
 .float-L {
 	float : left;
@@ -392,4 +394,14 @@ input[type="text"] {
 	font-weight: normal;
 	clear: both;
 	line-height: 10px;	
+}
+.fig_speech {
+	font-family: ff-din-web-condensed,sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	background: #CE1D1D;
+	padding: 10px 20px;
+	width: 157px;
+	color: #fff;
+	text-transform : uppercase;
 }
