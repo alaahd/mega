@@ -407,9 +407,10 @@ input[type="text"] {
 }
 
 .v_option.124 img, .v_option.111 img {
-	width: 98%;
+	width: 98% !important;
 }
 
 .v_option.124 p, .v_option.111 p {
-	width: 98%;
+	width: 95% !important;
 }
+
