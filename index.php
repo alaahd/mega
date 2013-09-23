@@ -365,7 +365,7 @@
 									<div class="section-underline"></div>
 									<?php
 									$j = 0;
-									if($i == 1) { ?>
+									if(2 == 1) { ?>
 										<div class="fig_speech">(15th Hole, Par 4)</div>
 									<?php }
 									?>
