@@ -406,10 +406,10 @@ input[type="text"] {
 	text-transform : uppercase;
 }
 
-.124 img, .111 img {
+.v_option.124 img, .v_option.111 img {
 	width: 98%;
 }
 
-.124 p, .111 p {
+.v_option.124 p, .v_option.111 p {
 	width: 98%;
 }
