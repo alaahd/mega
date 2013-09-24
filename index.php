@@ -294,6 +294,7 @@
 					<div class="vote_con_c sponsors">						
 						<div style="width:173px">[Category Sponsor]</div>
 						<a href="#" target="_blank" class="spons spons_0"></a>
+						<a href="#" target="_blank" class="spons spons_13"></a>
 						<div style="width:192px">[In Association With]</div>
 						<a href="#" target="_blank" class="spons spons_1"></a>
 						<a href="#" target="_blank" class="spons spons_2"></a>
@@ -372,6 +373,7 @@
 									<div class="options_wrap">	
 										<?php
 										foreach($q['options'] as $o) { 
+											if($o['choice'] == 'Doha Golf Club') continue;
 											++$j;
 											?>
 											<div class="v_option v-<?= $o['option_id'] ?>" <?php if(($j-1)%4==0) echo 'style="margin: 0 0 15px 0;"'; ?>>											
