@@ -406,11 +406,11 @@ input[type="text"] {
 	text-transform : uppercase;
 }
 
-.v-124 img, .v-111 img {
+.v-124 img, .v-111 img, .v-112 img, .v-108 img, .v-109 img, .v-110 img, .v-110 img, .v-77 img, .v-78 img, .v-81 img, .v-82 img, .v-85 img, .v-86 img, .v-114 img, .v-95 img, .v-96 img, .v-105 img {
 	width: 98% !important;
 }
 
-.v-124 p, .v-111 p {
+.v-124 p, .v-111 p, .v-112 p, .v-108 p, .v-109 p, .v-110 p, .v-110 p, .v-77 p, .v-78 p, .v-81 p, .v-82 p, .v-85 p, .v-86 p, .v-114 p, .v-95 p, .v-96 p, .v-105 p {
 	width: 95% !important;
 }
 
