@@ -374,7 +374,7 @@
 										foreach($q['options'] as $o) { 
 											++$j;
 											?>
-											<div class="v_option <?= $o['option_id'] ?>" <?php if(($j-1)%4==0) echo 'style="margin: 0 0 15px 0;"'; ?>>											
+											<div class="v_option v-<?= $o['option_id'] ?>" <?php if(($j-1)%4==0) echo 'style="margin: 0 0 15px 0;"'; ?>>											
 												<img class="logo-<?= $o['option_id'] ?>" src="<?php echo $o['file_name']; ?>?v1" />
 												<p><?php echo $o['choice']; ?></p>
 												<a class="rad_select" id="question-<?php echo $i.'-'.$j ?>" href="#">SELECT</a>
