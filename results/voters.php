@@ -7,6 +7,7 @@ require_once('../config.php');
 
 $return = array();
 $questions = array();
+$locations = get_location();
 /* - Get all questions - */
 $dbs = $dbh->prepare("SELECT * FROM voters;");
 $dbs->execute();
@@ -18,7 +19,7 @@ if($dbs->errorCode() == 0)
 		echo '<li><b>'.$kr['name'].'</b></br>';
 		echo ''.$kr['email'].'</br>';
 		echo ''.$kr['mobile'].'</br>';
-		echo 'Location : '.$kr['location'].'</br>';
+		echo 'Location : '.$locations[$kr['location']].'</br>';
 		$dbs = $dbh->prepare("SELECT * FROM questions;");
 		$dbs->execute();
 		if($dbs->errorCode() == 0) 
@@ -52,5 +53,19 @@ else {
 	$return['msg'] = 'Database Error: ' . $errors[2];												
 }	
 if($debug)  echo json_encode($return);
-
+function get_location(){
+	global $dbh;
+	$location = array();
+	$dbs = $dbh->prepare("SELECT * FROM location;");
+	$dbs->execute();
+	if($dbs->errorCode() == 0) 
+	{
+		$rows=$dbs->fetchAll(PDO::FETCH_ASSOC);	
+		foreach($rows as $r) {
+			$location[$r['id']] = $r['location'];
+		}
+		return $location;
+	}	
+	
+}
 ?>
