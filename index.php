@@ -294,7 +294,8 @@
 					<div class="vote_con_c sponsors">						
 						<div style="width:173px">[Category Sponsor]</div>
 						<a href="#" target="_blank" class="spons spons_0"></a>
-						<a href="#" target="_blank" class="spons spons_13"></a>
+						<a href="#" target="_blank" class="spons spons_13"></a>						
+						<a href="#" target="_blank" class="spons spons_15"></a>
 						<a href="#" target="_blank" class="spons spons_14"></a>
 						<div style="width:192px">[In Association With]</div>
 						<a href="#" target="_blank" class="spons spons_1"></a>
