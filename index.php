@@ -48,7 +48,7 @@
 	<link type="text/css" rel="stylesheet" media="all" href="http://www.sport360.com//sites/default/files/css/css_6b87192f8788bf4d40fcec90d60458f5.css" />
 	<link type="text/css" rel="stylesheet" media="screen" href="http://www.sport360.com//sites/default/files/css/css_5e6eec3cc9950d8c3ed12a8e7948432c.css" />
 	<link type="text/css" rel="stylesheet" media="print" href="http://static.sport360.com/sites/all/themes/openpublish_theme/css/print.css?v=1.0"/>
-	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v22" />
+	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v23" />
 	<script type="text/javascript" src="http://use.typekit.com/srl7xxo.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="http://www.sport360.com//sites/default/files/js/js_94589f9a906b54e9cc10035e6f114243.js"></script>
@@ -297,6 +297,7 @@
 						<a href="#" target="_blank" class="spons spons_13"></a>						
 						<a href="#" target="_blank" class="spons spons_15"></a>
 						<a href="#" target="_blank" class="spons spons_14"></a>
+						<a href="#" target="_blank" class="spons spons_16"></a>
 						<div style="width:192px">[In Association With]</div>
 						<a href="#" target="_blank" class="spons spons_1"></a>
 						<a href="#" target="_blank" class="spons spons_2"></a>
@@ -304,12 +305,14 @@
 						<a href="#" target="_blank" class="spons spons_4"></a>
 						<a href="#" target="_blank" class="spons spons_11"></a>
 						<a href="#" target="_blank" class="spons spons_12"></a>
+						<a href="#" target="_blank" class="spons spons_18"></a>
 						<div style="width:192px">[Official Media Partners]</div>
 						<span class="clearfix"></span>
 						<a href="#" target="_blank" class="spons spons_5"></a>
 						<a href="#" target="_blank" class="spons spons_6"></a>
 						<a href="#" target="_blank" class="spons spons_7"></a>
 						<a href="#" target="_blank" class="spons spons_8"></a>
+						<a href="#" target="_blank" class="spons spons_17"></a>
 						<br/>
 						<span class="float-L">
 							<div style="width: 137px;">[Official Auditor]</div>

@@ -194,7 +194,7 @@ a.lang_ar_link {
 	display : inline-block;
 	width : 120px;
 	height : 85px;
-	margin : 0 10px 0 0;
+	margin: 0 10px 10px 0;
 	padding:0 15px 0 0;
 	border-right:3px solid #eee;
 	background-size: contain;
@@ -242,6 +242,9 @@ a.lang_ar_link {
 .spons_13 {background-image: url('img/sponsors-v2-13.jpg');}
 .spons_14 {background-image: url('img/sponsors-v2-14.jpg');}
 .spons_15 {background-image: url('img/sponsors-v2-15.jpg');}
+.spons_16 {background-image: url('img/sponsors-v2-16.jpg');}
+.spons_17 {background-image: url('img/sponsors-v2-17.jpg');}
+.spons_18 {background-image: url('img/sponsors-v2-18.jpg');}
 
 .float-L {
 	float : left;
