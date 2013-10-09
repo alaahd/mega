@@ -48,7 +48,7 @@
 	<link type="text/css" rel="stylesheet" media="all" href="http://www.sport360.com//sites/default/files/css/css_6b87192f8788bf4d40fcec90d60458f5.css" />
 	<link type="text/css" rel="stylesheet" media="screen" href="http://www.sport360.com//sites/default/files/css/css_5e6eec3cc9950d8c3ed12a8e7948432c.css" />
 	<link type="text/css" rel="stylesheet" media="print" href="http://static.sport360.com/sites/all/themes/openpublish_theme/css/print.css?v=1.0"/>
-	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v23" />
+	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v24" />
 	<script type="text/javascript" src="http://use.typekit.com/srl7xxo.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="http://www.sport360.com//sites/default/files/js/js_94589f9a906b54e9cc10035e6f114243.js"></script>
@@ -313,6 +313,7 @@
 						<a href="#" target="_blank" class="spons spons_7"></a>
 						<a href="#" target="_blank" class="spons spons_8"></a>
 						<a href="#" target="_blank" class="spons spons_17"></a>
+						<a href="#" target="_blank" class="spons spons_19"></a>
 						<br/>
 						<span class="float-L">
 							<div style="width: 137px;">[Official Auditor]</div>
