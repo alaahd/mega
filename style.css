@@ -255,6 +255,11 @@ a.lang_ar_link {
 .spons_20 {background-image: url('img/evian.jpg');}
 .spons_21 {background-image: url('img/sponsors-v2-20.png');}
 
+.award_listing  li{
+	margin: 0 0 5px 35px !important;
+	list-style: disc !important;
+}
+
 .float-L {
 	float : left;
 	margin:0 15px 0 0;

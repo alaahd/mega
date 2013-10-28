@@ -48,7 +48,7 @@
 	<link type="text/css" rel="stylesheet" media="all" href="http://www.sport360.com//sites/default/files/css/css_6b87192f8788bf4d40fcec90d60458f5.css" />
 	<link type="text/css" rel="stylesheet" media="screen" href="http://www.sport360.com//sites/default/files/css/css_5e6eec3cc9950d8c3ed12a8e7948432c.css" />
 	<link type="text/css" rel="stylesheet" media="print" href="http://static.sport360.com/sites/all/themes/openpublish_theme/css/print.css?v=1.0"/>
-	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v27" />
+	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v28" />
 	<script type="text/javascript" src="http://use.typekit.com/srl7xxo.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="http://www.sport360.com//sites/default/files/js/js_94589f9a906b54e9cc10035e6f114243.js"></script>
@@ -332,7 +332,17 @@
 					<div class="section-title flaot-L CondMedium"><a id="xxaward" href="#"><span class="Cond">ATTEND THE</span>  <span class="mred">AWARDS</span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c sponsors">	
-						<p style="padding-top: 14px">Information about the Gala Event dinner which will be held on the <strong>11th of December 2013</strong> will be released by early October.</p>
+						<p style="padding-top: 14px">
+						<p>The MEGA red carpet gala dinner event will be held on the <strong>11th December 2013</strong> at the One & Only Royal Mirage Amphitheatre.</p>
+						<p>At the event there will be:</p>
+						<ul class="award_listing">
+							<li>Complementary valet parking</li>
+							<li>Cocktail reception</li>
+							<li>3 course gourmet meal with beverages</li>
+							<li>Live entertainment</li>
+							<li>After party with unlimited beverages at The Rooftop bar</li>
+						</ul>
+						</p>
 					</div>
 				</div>
 				<div class="features vfeatures">
