@@ -346,7 +346,8 @@
 					<div class="section-title flaot-L CondMedium"><a id="xxvote" href="#"><span class="Cond">CAST</span>  <span class="mred">YOUR VOTE</span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c questions">	
-						<p style="margin: 30px 3px">Terms & Conditions – Voting open for all. Only 1 vote per category permitted</p>
+						<p class="voting_closed" style="margin: 30px 3px">Voting is closed now! Stay tuned for the results!!</p>
+						<?php /*
 						<ul class="left-list">
 						<?php
 						$i = 0;						
@@ -396,16 +397,16 @@
 								</div>	
 								<?php
 							}	
-							/*
+							
 							?>
-							Name<br/>
-							<input type="text" name="full_name" /><br/><br/>
-							Email<br/>
-							<input type="text" name="email" /><br/><br/>
-							Mobile<br/>
-							<input type="text" name="mobile" /><br/><br/>
-							<input type="submit" value="Submit"/>
-							*/
+							#Name<br/>
+							#<input type="text" name="full_name" /><br/><br/>
+							#Email<br/>
+							#<input type="text" name="email" /><br/><br/>
+							#Mobile<br/>
+							#<input type="text" name="mobile" /><br/><br/>
+							#<input type="submit" value="Submit"/>
+							
 							?>
 							<div class="main-content-subscribe"> 
 								<div class="standalone-field">
@@ -457,6 +458,7 @@
 						</form>
 						<p class="error_vote">Error posting vote</p>
 						<p class="success_vote">Successfully Voted</p>
+						*/?>
 					</div>
 				</div>	
 			</div>	

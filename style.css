@@ -10,6 +10,12 @@
     font-style: normal;
 }
 */
+.voting_closed {
+	margin: 30px 3px;
+	padding: 20px;
+	background: rgb(205, 255, 205);
+	border: 1px solid rgb(52, 172, 52);
+}
 .clearfix {
 	clear: both;
 }
