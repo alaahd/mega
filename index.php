@@ -40,7 +40,7 @@
     <meta name="description" content="Sport 360 , Sports news, football news, sports venues from Dubai, Abu Dhabi, UAE" />
     <meta name="keywords" content="Sport360,Sports, news, football news, sports venues from Dubai, Abu Dhabi, UAE" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script type="text/javascript" src="js/swfobject.js"></script>
+	<?php /* <script type="text/javascript" src="js/swfobject.js"></script> */?>
 	<meta property="fb:admins" content="504700599,540601292,623670643"/>
 	
 	<link rel="alternate" type="application/rss+xml" title="Sport 360 RSS" href="http://www.sport360.com/rss/articles/all" />
@@ -257,15 +257,7 @@
 				</ul>
 			</div>	
 			<div class="ag_content">					
-				<div class="header_swf"> 
-					<script type="text/javascript">
-						swfobject.embedSWF("img/mega_header.swf", "flash_alt", "764", "394", "9.0.0");
-					</script>
-					<div id="flash_alt" class="vote_banner">
-						<a href="#xxvote" class="vote_button" href="#xxvote">CAST YOUR VOTE!</a>
-					</div>
-				</div>
-				<a href="#xxvote" class="vote_bu_header"></a>	
+				<div class="header_swf"></div>				
 				<div class="clearfix"></div>
 				
 				<div id="block-nice_menus-1" class="vote_menu clearfix block block-nice_menus">
@@ -300,6 +292,7 @@
 						<a href="#" target="_blank" class="spons spons_16"></a>
 						<a href="#" target="_blank" class="spons spons_20"></a>
 						<a href="#" target="_blank" class="spons spons_21"></a>
+						<a href="#" target="_blank" class="spons spons_22"></a>
 						<div style="width:192px">[In Association With]</div>
 						<a href="#" target="_blank" class="spons spons_1"></a>
 						<a href="#" target="_blank" class="spons spons_2"></a>

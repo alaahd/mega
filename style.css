@@ -23,7 +23,7 @@
 	color: #fff !important;
 	background: #cc2029 url(http://sport360.com/sites/all/themes/openpublish_theme/images/new-menu/bg-nav-active-sep.gif) no-repeat 50% 0 !important;
 }
-.header_swf {float: left;width: 764px;height: 394px;overflow:hidden;background:url(img/header_swf.png) no-repeat}
+.header_swf {float: left;width: 100%;height: 393px;overflow:hidden;background:url(img/mega_header.jpg) no-repeat}
 .vote_bu_header {float:right; width:207px;height : 393px;display: block;background:url(img/vote2.png) no-repeat; position: relative;
 left: -1px;}
 .lang_ar {
@@ -254,6 +254,7 @@ a.lang_ar_link {
 .spons_19 {background-image: url('img/sponsors-v2-19.png');}
 .spons_20 {background-image: url('img/evian.jpg');}
 .spons_21 {background-image: url('img/sponsors-v2-20.png');}
+.spons_22 {background-image: url('img/sponsors-v2-22.png');}
 
 .award_listing  li{
 	margin: 0 0 5px 35px !important;
