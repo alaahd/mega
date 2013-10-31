@@ -48,7 +48,7 @@
 	<link type="text/css" rel="stylesheet" media="all" href="http://www.sport360.com//sites/default/files/css/css_6b87192f8788bf4d40fcec90d60458f5.css" />
 	<link type="text/css" rel="stylesheet" media="screen" href="http://www.sport360.com//sites/default/files/css/css_5e6eec3cc9950d8c3ed12a8e7948432c.css" />
 	<link type="text/css" rel="stylesheet" media="print" href="http://static.sport360.com/sites/all/themes/openpublish_theme/css/print.css?v=1.0"/>
-	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v29" />
+	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v30" />
 	<script type="text/javascript" src="http://use.typekit.com/srl7xxo.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="http://www.sport360.com//sites/default/files/js/js_94589f9a906b54e9cc10035e6f114243.js"></script>
@@ -347,122 +347,111 @@
 					</div>
 				</div>
 				<div class="features vfeatures">
-					<div class="section-title flaot-L CondMedium"><a id="xxvote" href="#"><span class="Cond">CAST</span>  <span class="mred">YOUR VOTE</span></a></div>
+					<div class="section-title flaot-L CondMedium"><a id="xxvote" href="#"><span class="Cond">MEGA VOTE</span><span class="mred">FINALISTS</span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c questions">	
-						<p class="voting_closed" style="margin: 30px 3px">Voting is closed now! Stay tuned for the results!!</p>
-						<?php /*
-						<ul class="left-list">
-						<?php
-						$i = 0;						
-						foreach($questions as $q) {
-							++$i;
-							?>
-							<li><a class="CondMedium" href="#question-<?php echo $i ?>"><?php echo $i.'.  '.$q['question'] ?></a></li>
-							<?php
-								if($i == (int)count($questions)/2) {
-									echo '</ul><ul class="right-list">';
-								}
-						}
-						?>
-						</ul>
-						<div class="clearfix"></div>
-						<form method="POST" action="vote.php" id="voteForm">
-							<?php 
-							$i = 0;						
-							foreach($questions as $q) {
-								++$i;
-								?>
-								<div id="question-<?php echo $i ?>" class="features vfeatures">
-									<div class="section-title flaot-L CondMedium"><a href="#"><span class="Cond"><?php echo $i.'.  '.$q['question'] ?></a></div>
-									<div class="section-underline"></div>
-									<?php
-									$j = 0;
-									if(2 == 1) { ?>
-										<div class="fig_speech">(15th Hole, Par 4)</div>
-									<?php }
-									?>
-									<div class="options_wrap">	
-										<?php
-										foreach($q['options'] as $o) { 
-											if($o['choice'] == 'Doha Golf Club') continue;
-											++$j;
-											?>
-											<div class="v_option v-<?= $o['option_id'] ?>" <?php if(($j-1)%4==0) echo 'style="margin: 0 0 15px 0;"'; ?>>											
-												<img class="logo-<?= $o['option_id'] ?>" src="<?php echo $o['file_name']; ?>?v1" />
-												<p><?php echo $o['choice']; ?></p>
-												<a class="rad_select" id="question-<?php echo $i.'-'.$j ?>" href="#">SELECT</a>
-												<input value="<?php echo $o['option_id'] ?>" class="hide radio_control clearfix" type="radio" name="qid[<?php echo $q['qid'] ?>]">											
-											</div>												
-										<?php } ?>	
-										<span class="clearfix"></span>
-										<p class="error_text">You must choose one item from the choices</p>
-									</div>	
-								</div>	
-								<?php
-							}	
-							
-							?>
-							#Name<br/>
-							#<input type="text" name="full_name" /><br/><br/>
-							#Email<br/>
-							#<input type="text" name="email" /><br/><br/>
-							#Mobile<br/>
-							#<input type="text" name="mobile" /><br/><br/>
-							#<input type="submit" value="Submit"/>
-							
-							?>
-							<div class="main-content-subscribe"> 
-								<div class="standalone-field">
-									<div class="form-item xfg" id="edit-Name-wrapper">
-										<label for="edit-Name">Name: <span class="form-required" title="This field is required.">*</span></label>
-										<input type="text" maxlength="128" name="name" id="edit-Name" size="60" value="" class="form-text required">
-										<p class="error_text">Name can't be blank</p>
-									</div>
-								</div>
-								<div class="floating-field">
-									<div class="form-item xfg" id="edit-Email-wrapper">
-										<label for="edit-Email">Email: <span class="form-required" title="This field is required.">*</span></label>
-										<input type="text" maxlength="128" name="email" id="edit-Email" size="60" value="" class="form-text required">
-										<p class="error_text">You must enter an Email</p>
-									</div>
-								</div>
-								<div class="floating-field">
-									<div class="form-item xfg" id="edit-Mobile-wrapper">
-										<label for="edit-Mobile">Mobile: <span class="form-required" title="This field is required.">*</span></label>
-										<input type="text" maxlength="128" name="mobile" id="edit-Mobile" size="60" value="" class="form-text required">
-										<p class="error_text">Phone no. should not be blank</p>
-									</div>
-								</div>
-								<div class="floating-field">
-									<div class="form-item xfg" id="edit-Mobile-wrapper">
-										<label for="edit-Mobile">Location: </label>
-										<select class="ag_select" name="location">
-											<?php 
-											$dbs = $dbh->prepare("SELECT * FROM location;");
-											$dbs->execute();
-											if($dbs->errorCode() == 0) 
-											{
-												$rows=$dbs->fetchAll(PDO::FETCH_ASSOC);	
-												foreach($rows as $r) {	
-													?>
-													<option value="<?php echo $r['id'] ?>"><?php echo $r['location'] ?></option>
-													<?php
-												}
-											}	
-											?>
-										</select>
-										<p class="error_text">Phone no. should not be blank</p>
-									</div>
-								</div>
-								<div class="standalone-field field-clear"></div>
-								<div class="clearfix submite_sub"><br/></div>
-								<input type="button" name="op" id="edit-submit" style="margin:20px 0 0 0" value="Submit" class="form-submit">
-							</div>
-						</form>
-						<p class="error_vote">Error posting vote</p>
-						<p class="success_vote">Successfully Voted</p>
-						*/?>
+						<h2>Golf Hole of the Year</h2>
+							<p>Emirates Golf Club, Majlis Course (18th Hole – Par 5)</p>
+							<p>Yas Links Golf Club (17th Hole – Par 3)</p>
+							<p>Saadiyat Beach Golf Cub (5th Hole – Par 4)</p>
+							<p>Doha Golf Club (15th Hole – Par 4)</p>
+							<p>Abu Dhabi Golf Club (18th Hole – Par 5)</p>
+							<p>Towers Links Golf Club (18th Hole – Par 5)</p>
+							<p>Dubai Creek Golf & Yatch Club (18th Hole – Par 4)</p>
+						<h2>Professional Event of the Year</h2>
+							<p>Abu Dhabi HSBC Golf Championships</p>
+							<p>Commercial Bank Qatar Masters</p>
+							<p>DP World Tour Championships</p>
+							<p>Omega Dubai Desert Classic</p>
+						<h2>Golf Course of the year above 400 AED / $110 (Green Fees)</h2>
+							<p>Royal Golf Club Bahrain</p>
+							<p>Abu Dhabi Golf Club</p>
+							<p>Emirates Golf Club, Majlis Course</p>
+							<p>Yas Links Golf Club</p>
+							<p>Almouj Golf at the Wave Muscat</p>
+							<p>Jumeirah Golf Estates, Earth Course</p>
+						<h2>Golf Course of the year under 400 AED / $110 (Green Fees)</h2>
+							<p>The Track, Meydan</p>
+							<p>Jebel Ali Golf Resort</p>
+							<p>Al Hamra Golf Club</p>
+							<p>Sharjah Golf & Shooting Club</p>
+						<h2>Best Practice Facility of the Year</h2>
+							<p>Abu Dhabi City Golf Club</p>
+							<p>The Els Club</p>
+							<p>The Address Montgomerie</p>
+							<p>Saadiyat Beach Golf Club</p>
+							<p>Doha Golf Club</p>
+						<h2>Best Academy of the year</h2>
+							<p>Abu Dhabi Golf Club, The Golf Institute </p>
+							<p>Royal Golf Club Bahrain</p>
+							<p>Dubai Creek & Yatch Club</p>
+							<p>The Els Club, Butch Harmon School of Golf</p>
+							<p>Al Badia Golf by InterContinental</p>
+							<p>Yas Links</p>
+						<h2>Best Food & Beverage Outlet of the year</h2>
+							<p>Ranches Restaurant at Arabian Ranches Golf Club</p>
+							<p>The Cube at the Track, Meydan</p>
+							<p>Hickroy’s at Yas Links</p>
+							<p>Blades at Al Badia</p>
+							<p>Links at The Address Montgomerie</p>
+						<h2>Apparel of the Year</h2>
+							<p>Greg Norman</p>
+							<p>Footjoy</p>
+							<p>J.Lindeberg</p>
+							<p>Ecco</p>
+							<p>Galvin Green</p>
+							<p>Oakley</p>
+						<h2>Equipment of the Year</h2>
+							<p>Callaway</p>
+							<p>Ping</p>
+							<p>Club Car</p>
+							<p>Titleist</p>
+							<p>Cleveland</p>
+							<p>Odyssey Putters</p>
+						<h2>Retailer of the year</h2>
+							<p>Golf House</p>
+							<p>EGolf Outlet</p>
+							<p>Ecco</p>
+						<h2>Corporate Tournament of the year</h2>
+							<p>Xerox Corporate golf challenge</p>
+							<p>Al Fair Charity Golf Day</p>
+							<p>The Dubai duty free golf world cup</p>
+						<h2>Amateur tournament of the year</h2>
+							<p>Abu Dhabi Mens Open by Abu Dhabi Golf Club</p>
+							<p>5th UAE PGA Patrons Pro Am by IP Global</p>
+							<p>The Chivas Mens Open by Abu Dhabi City Golf Club</p>
+							<p>17th GCC Golf Championships by Almouj Golf at the wave Muscat</p>
+							<p>ASIA vs The World by FIGME</p>
+							<p>The Conares Golf Society League by Sharjah Golf & Shooting club</p>
+						<h2>Best Golf Sponsorship of the year</h2>
+							<p>Xerox for the Xerox Corporate Golf Challenge</p>
+							<p>Sian Live for the Sian Golf Series</p>
+							<p>Peugeot for the Peugeot Order of Merit & Grand Final</p>
+							<p>Acuma for the UAE Professional Golfers Association</p>
+							<p>IP Global for the UAE Professional Golfers Association</p>
+							<p>Emirates NBD for the Omega Dubai Desert Classic</p>
+							<p>Chicago Bridge & Iron for the Philippine Independence Day Golf Invitational</p>
+							<p>Conares for the Conares Golf Society League</p>
+						<h2>Best Golf Marketing Campaign of the year</h2>
+							<p>Yas Links Summer Passport 2013 by Yas Links</p>
+							<p>Emirates Golf Club Night Golf Campaign by Dubai Golf</p>
+							<p>ReGolf by Insight Dubai</p>
+							<p>Golf Academy Open Day by Abu Dhabi City golf Club</p>
+							<p>Summer Golf Passport by Almouj Golf club at the wave Muscat</p>
+							<p>Night golf at the Track by The Track Meydan</p>
+							<p>The Etihad Airways night flight by Abu Dhabi Golf Club</p>
+							<p>Callaway Marketing Campaign by Golf House</p>
+						<h2>Youth Development Initiative of the year</h2>
+							<p>The Faldo series by Al Ain Equestrian Shooting & Golf Club</p>
+							<p>Kellogg’s Grass Roots Golf by MGW Golf</p>
+							<p>Junior Development Program at the Academy by Troon Golf, the Address Montgomerie</p>
+							<p>Yas Links Golf Academy by Yas Links</p>
+							<p>The Abu Dhabi City Golf Club Junior Golf School by Abu Dhabi City Golf Club</p>
+							<p>Abu Dhabi Schools& club League by Saadiyat Beach Golf Club</p>
+							<p>Future Falcon Program by Abu Dhabi Golf Club</p>
+							<p>Junior Development Program by Al Badia</p>
+							<p>Junior Development Program by Dubai Creek Golf & Yatch Club</p>
+							<p>Junior Development Program by Sharjah Golf & Shooting Club</p>						
 					</div>
 				</div>	
 			</div>	

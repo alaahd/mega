@@ -51,9 +51,21 @@ left: -1px;}
 }
 
 .vote_con_c.questions {
-	padding:0;
+	padding:15px 0 50px 0;
 }
-
+.vote_con_c.questions h2 {
+	background: transparent;
+	font-style: normal;
+	text-transform: uppercase;
+	border: 0;
+	font-family: ff-din-web-condensed,sans-serif;
+}
+.vote_con_c.questions h2:after {
+	content: "";
+}
+.vote_con_c.questions p {
+	padding: 0 15px;
+}
 .questions li {
 	margin:0 0 15px 0;
 	list-style: none;
