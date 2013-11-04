@@ -329,12 +329,13 @@
 						<p>The MEGA red carpet gala dinner event will be held on the <strong>11th December 2013</strong> at the One & Only Royal Mirage Amphitheatre.</p>
 						<p>At the event there will be:</p>
 						<ul class="award_listing">
-							<li>Complementary valet parking</li>
+							<li>Complimentary valet parking</li>
 							<li>Cocktail reception</li>
 							<li>3 course gourmet meal with beverages</li>
 							<li>Live entertainment</li>
-							<li>After party with unlimited beverages at The Rooftop bar</li>
+							<li>After party at The Rooftop bar with beverages</li>
 						</ul>
+						<img src="img/table.jpg" width="100%"/>
 						</p>
 					</div>
 				</div>
