@@ -335,7 +335,7 @@
 							<li>Live entertainment</li>
 							<li>After party at The Rooftop bar with beverages</li>
 						</ul>
-						<img src="img/table.jpg" width="100%"/>
+						<img src="img/table.jpg?v=1" width="100%"/>
 						</p>
 					</div>
 				</div>
