@@ -336,7 +336,7 @@
 							<li>Live entertainment</li>
 							<li>After party at The Rooftop bar with beverages</li>
 						</ul>
-						<img src="img/table.jpg?v=1" width="100%"/>
+						<img src="img/table.jpg?v=2" width="100%"/>
 						</p>
 					</div>
 				</div>
@@ -434,6 +434,7 @@
 							<p>Emirates NBD for the Omega Dubai Desert Classic</p>
 							<p>Chicago Bridge & Iron for the Philippine Independence Day Golf Invitational</p>
 							<p>Conares for the Conares Golf Society League</p>
+							<p>The Bank Dhofar Pro Am Golf Tournament</p>
 						<h2>Best Golf Marketing Campaign of the year</h2>
 							<p>Yas Links Summer Passport 2013 by Yas Links</p>
 							<p>Emirates Golf Club Night Golf Campaign by Dubai Golf</p>
