@@ -1,4 +1,4 @@
-<?php include 'core.php' ?>
+<?php #include 'core.php' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/terms/DCMIType/" xmlns:ctag="http://commontag.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:v="http://rdf.data-vocabulary.org/#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"  dir="ltr" version="XHTML+RDFa 1.0">
 <head>
@@ -48,7 +48,7 @@
 	<link type="text/css" rel="stylesheet" media="all" href="http://www.sport360.com//sites/default/files/css/css_6b87192f8788bf4d40fcec90d60458f5.css" />
 	<link type="text/css" rel="stylesheet" media="screen" href="http://www.sport360.com//sites/default/files/css/css_5e6eec3cc9950d8c3ed12a8e7948432c.css" />
 	<link type="text/css" rel="stylesheet" media="print" href="http://static.sport360.com/sites/all/themes/openpublish_theme/css/print.css?v=1.0"/>
-	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v34" />
+	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v35" />
 	<script type="text/javascript" src="http://use.typekit.com/srl7xxo.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="http://www.sport360.com//sites/default/files/js/js_94589f9a906b54e9cc10035e6f114243.js"></script>
@@ -325,7 +325,7 @@
 				<div class="features vfeatures">
 					<div class="section-title flaot-L CondMedium"><a id="xxaward" href="#"><span class="Cond">ATTEND THE</span>  <span class="mred">AWARDS</span></a></div>
 					<div class="section-underline"></div>
-					<div class="vote_con_c sponsors">	
+					<div class="vote_con_c sponsors award_event_program">	
 						<p style="padding-top: 14px">
 						<p>The MEGA red carpet gala dinner event will be held on the <strong>11th December 2013</strong> at the One & Only Royal Mirage Amphitheatre.</p>
 						<p>At the event there will be:</p>
@@ -336,6 +336,38 @@
 							<li>Live entertainment</li>
 							<li>After party at The Rooftop bar with beverages</li>
 						</ul>
+						<strong><p>Program of the Event</p></strong>
+							<li><time>7.15 PM </time>
+							<span>Guests Arrive</span> </li>
+
+							<li><time>7.30 PM &mdash; 8.30 PM</time>
+							<span>Cocktail Reception</span> </li>
+							 
+							<li><time>8.30 PM</time>
+							<span>Master of Ceremony &mdash; Richard Dean &amp; Tom Bushell</span> </li>
+							 
+							<li><time>8.45 PM</time>
+							<span>Welcome Speech &mdash; Michael Chalhoub, CEO of Sport360</span> </li>
+							 
+							<li><time>8.50 PM</time>
+							<span>Entertainment &mdash; Sterling EQ</span> </li>
+
+							<li><b><em>Dinner is Served</em></b></li>
+							 
+							<li><time>9.30 PM</time>
+							<span>Award Ceremony Begins</span> </li>
+							 
+							<li><time>10.15 PM</time>
+							<span>Entertainment &mdash; Sterling EQ</span> </li>
+							 
+							<li><time>10.45 PM</time>
+							<span>Awards Ceremony Continues</span> </li>
+
+							<li><time>11.30 PM </time>
+							<span>Middle East Golf Awards Gala Dinner 2013 draws to a close</span> </li>
+
+							<li><time>11.45 PM</time>
+							<span>After Party Begins</span></li>
 						<img src="img/table.jpg?v=2" width="100%"/>
 						</p>
 					</div>

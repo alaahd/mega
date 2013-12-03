@@ -450,3 +450,5 @@ input[type="text"] {
 .award_listing {
 	margin:0 0 30px 0;
 }
+.award_event_program time {display : block;}
+.award_event_program li span { font-style: italic;}
