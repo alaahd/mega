@@ -368,7 +368,7 @@
 
 							<li><time>11.45 PM</time>
 							<span>After Party Begins</span></li>
-						<img src="img/table.jpg?v=2" width="100%"/>
+						<img src="img/table.jpg?ver=3" width="100%"/>
 						</p>
 					</div>
 				</div>
