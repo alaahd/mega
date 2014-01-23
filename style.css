@@ -1,4 +1,4 @@
-/*
+
 @font-face {
     font-family: 'ff-din-web-condensed';
     src: url('font/ff_din_condensed_regular-webfont.eot');
@@ -9,7 +9,7 @@
     font-weight: normal;
     font-style: normal;
 }
-*/
+
 .voting_closed {
 	margin: 30px 3px;
 	padding: 20px;
