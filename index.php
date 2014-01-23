@@ -1,11 +1,25 @@
-<?php #include 'core.php' ?>
+<?php include 'core.php' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/terms/" xmlns:dcmitype="http://purl.org/dc/terms/DCMIType/" xmlns:ctag="http://commontag.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:v="http://rdf.data-vocabulary.org/#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en"  dir="ltr" version="XHTML+RDFa 1.0">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <style>
-@media (min-width: 970px) {
+
+#div-gpt-ad-bg-oop_ad_container {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 0;
+	cursor: pointer;
+	height: 990px;
+}
+
+#outer-wrapper {
+background: #FFF;
+}
+
     #skin {
         position: absolute;
         width: 100%;
@@ -18,67 +32,335 @@
     }
 
     #background {
-      /* background: url(http://arabic.sport360.com/sites/all/themes/simpl/images/nike_bg_2.jpg) no-repeat 49% 0; */
-      background-color: #ffffff;
+ 
+      background: url(http://arabic.sport360.com/sites/all/themes/simpl/images/polo_en.jpg) no-repeat 50% 0;
       height: 800px;
       position: fixed;
       width: 100%;
-      top: -80px;
+      top: 0;
       z-index: 1;
-    }  
+    } 
+
+    .front #background {
+      
+      background: url(http://arabic.sport360.com/sites/all/themes/simpl/images/polo_en.jpg) no-repeat 50% 0;
+top: 0;
+    }
+
+#manutd #background {
+
+      background: url(http://www.sport360.com/manutd_en.jpg) no-repeat 50% 0;
+top: 0;
+    }
+
+    .front .footer-ad, #manutd .footer-ad {
+     visibility: hidden;
+    } 
+ 
+
+#sidebar-right #block-block-261 {
+    display: none;
+}
+</style>
+<script type="text/javascript">
+// create my jsCookies function
+var jsCookies = {
+ 
+    // this gets a cookie and returns the cookies value, if no cookies it returns blank ""
+    get: function(c_name) {
+        if (document.cookie.length > 0) {
+            var c_start = document.cookie.indexOf(c_name + "=");
+            if (c_start != -1) {
+                c_start = c_start + c_name.length + 1;
+                var c_end = document.cookie.indexOf(";", c_start);
+                if (c_end == -1) {
+                    c_end = document.cookie.length;
+                }
+                return unescape(document.cookie.substring(c_start, c_end));
+            }
+        }
+        return "";
+    },
+ 
+    // this sets a cookie with your given ("cookie name", "cookie value", "good for x days")
+    set: function(c_name, value, expiredays) {
+        var exdate = new Date();
+        exdate.setDate(exdate.getDate() + expiredays);
+        document.cookie = c_name + "=" + escape(value) + "; path=/; domain=sport360.com"  + ((expiredays == null) ? "" : "; expires=" + exdate.toUTCString());
+    },
+ 
+    // this checks to see if a cookie exists, then returns true or false
+    check: function(c_name) {
+        c_name = jsCookies.get(c_name);
+        if (c_name != null && c_name != "") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+};
+// end my jsCookies function
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-.toplogin {
-	overflow: hidden;
+if(location.pathname == "/" && getParameterByName("fv") == 1) {
+    jsCookies.set("fv", "1");
+}
+
+(function(){
+    if (jsCookies.get("sp_lang") == "ar" && location.pathname == "/" && jsCookies.get("fv") != "1") {
+                window.location = "http://arabic.sport360.com";
+    }
+})();
+
+</script>
+
+  <title>
+               Sport 360.com | Sports news, football news, sports venues from Dubai, Abu Dhabi, UAE        </title>
+    <meta name="viewport" content="width=980"/>
+  <meta name="google-site-verification" content="EBy4J0ioMCpkYcmI7IOSoKofpRTKwCZ-xJxbXfIjTEE" />
+          <meta name="description" content="Sport 360 , Sports news, football news, sports venues from Dubai, Abu Dhabi, UAE" />
+        <meta name="keywords" content="Sport360,Sports, news, football news, sports venues from Dubai, Abu Dhabi, UAE" />
+  
+	
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="Sport 360 RSS" href="http://v1.sport360.com/rss/articles/all" />
+<link rel="shortcut icon" href="/sites/default/files/openpublish_theme_favicon.ico" type="image/x-icon" />
+<meta property="fb:admins" content="504700599,540601292,623670643"/>
+
+    		
+    <link type="text/css" rel="stylesheet" media="all" href="http://v1.sport360.com/sites/default/files/css/css_74475485b367d0b3b2faf9d8ae9304ea.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="style.css?v=36" />
+<link type="text/css" rel="stylesheet" media="screen" href="http://v1.sport360.com/sites/default/files/css/css_e25a201226956895b65e370af0ac2f2a.css" />
+  <link type="text/css" rel="stylesheet" media="print" href="http://static.sport360.com/sites/all/themes/openpublish_theme/css/print.css?v=1.0"/>
+
+  <script type="text/javascript" src="/sites/default/files/js/js_96c58b34898d1c1ab266515e0b3e332d.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "nice_menus_options": { "delay": 800, "speed": 1 }, "combineBlocks": [ [ "#block-views-most_viewed_by_taxonomy-block", "#block-views-most_commented_articles-block_1" ], [ "#block-views-most_viewed_by_node_type-block", "#block-views-most_commented_blogs-block_1" ], [ "#block-views-most_viewed_by_node_type-block", "#block-views-most_commented_articles-block_1" ] ], "op_workflow_bonus": null });
+//--><!]]>
+</script>
+
+  <!--[if gte IE 6]><link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/openpublish_theme/css/fix-ie.css" /><![endif]-->
+  <!--[if IE 6]><link type="text/css" rel="stylesheet" media="all" href="/##path_not_found##" /><![endif]-->
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript">
+        try{
+            stLight.options({publisher:'7b94e81c-e8b6-4786-aca0-126f45fe0d44'});
+        }
+        catch(err){}
+  </script>
+  	<script type="text/javascript" src="http://use.typekit.com/srl7xxo.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  
+
+  <!-- Google Ads -->
+  <script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+  <script type='text/javascript'>
+    GS_googleAddAdSenseService("ca-pub-0065025035544256");
+    GS_googleEnableAllServices();
+  </script>
+  <script type='text/javascript'>
+	// GA_googleAddSlot("ca-pub-0065025035544256", "Bottom_banner"); // Goes on every single page
+	GA_googleAddSlot("ca-pub-0065025035544256", "Bottom_Cricket");
+
+	// these are banners for score-center
+	GA_googleAddSlot("ca-pub-0065025035544256", "Score-Centre_Cricket");
+	GA_googleAddSlot("ca-pub-0065025035544256", "Score-Centre_F1");
+	GA_googleAddSlot("ca-pub-0065025035544256", "Score-centre_Football");
+  </script>
+  
+
+      <!-- (C)2000-2011 Gemius SA - gemiusAudience / sport360.com / Homepage -->
+    <script type="text/javascript">
+    var pp_gemius_identifier = new String('zanrsKt4LNKRwmbUqJKGgGYk3wkBF4ek3clxVii31TH.27');
+    </script>
+    <script type="text/javascript" src="http://static.sport360.com/sites/all/themes/openpublish_theme/js/xgemius.js"></script>
+
+    <script type='text/javascript'>
+		//GA_googleAddSlot("ca-pub-0065025035544256", "Power_Horse_Leader");
+        GA_googleAddSlot("ca-pub-0065025035544256", "Leaderboard_Header_728x90");
+		GA_googleAddSlot("ca-pub-0065025035544256", "tennis_728");
+		GA_googleAddSlot("ca-pub-0065025035544256", "football_728");
+		GA_googleAddSlot("ca-pub-0065025035544256", "cricket_728");
+		GA_googleAddSlot("ca-pub-0065025035544256", "golf_728");
+		GA_googleAddSlot("ca-pub-0065025035544256", "ussport_728");
+		GA_googleAddSlot("ca-pub-0065025035544256", "volvo_ocean_728");
+		GA_googleAddSlot("ca-pub-0065025035544256", "blogs_728");
+		GA_googleAddSlot("ca-pub-0065025035544256", "venue_728");
+		GA_googleAddSlot("ca-pub-0065025035544256", "motorsport_728");
+		GA_googleAddSlot("ca-pub-0065025035544256", "UAE360_728");
+        GA_googleAddSlot("ca-pub-0065025035544256", "300x250");
+		
+		GA_googleAddSlot("ca-pub-0065025035544256", "Right_Panel");
+		GA_googleAddSlot("ca-pub-0065025035544256", "Left-Panel");
+		
+		GA_googleAddSlot("ca-pub-0065025035544256", "Half_page_side");
+    </script>
+	
+
+
+  	
+         
+  
+  <script type='text/javascript'>
+    GA_googleFetchAds();
+  </script>
+
+  
+  <link href="https://plus.google.com/101766922067071447547" rel="publisher" />
+ <style>
+.lang_ar {
+height: 21px;
+margin-top: 0px;
+line-height: 23px;
+text-align: center;
+border-radius: 4px;
+padding: 5px 10px;
+background: #CC2029;
+display: block;
+color: white;
+font-size: 17px;
+font-weight: bold;
+font-family: 'Arabic Transparent', 'Simplified Arabic', arial, verdana, sans-serif;
+}
+
+a.lang_ar_link {
+color: #FFF;
+}
+
+.lang_ar:hover {
+background: #000;
 }
 </style>
 
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/ui-lightness/jquery-ui.css" />
 
-	<title>Sport 360.com | Sports news, football news, sports venues from Dubai, Abu Dhabi, UAE</title>
-    <meta name="viewport" content="width=980"/>
-	<meta name="google-site-verification" content="EBy4J0ioMCpkYcmI7IOSoKofpRTKwCZ-xJxbXfIjTEE" />
-    <meta name="description" content="Sport 360 , Sports news, football news, sports venues from Dubai, Abu Dhabi, UAE" />
-    <meta name="keywords" content="Sport360,Sports, news, football news, sports venues from Dubai, Abu Dhabi, UAE" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<?php /* <script type="text/javascript" src="js/swfobject.js"></script> */?>
-	<meta property="fb:admins" content="504700599,540601292,623670643"/>
-	
-	<link rel="alternate" type="application/rss+xml" title="Sport 360 RSS" href="http://www.sport360.com/rss/articles/all" />
-	<link rel="shortcut icon" href="http://www.sport360.com/sites/default/files/openpublish_theme_favicon.ico" type="image/x-icon" />
-	<link type="text/css" rel="stylesheet" media="all" href="http://www.sport360.com//sites/default/files/css/css_6b87192f8788bf4d40fcec90d60458f5.css" />
-	<link type="text/css" rel="stylesheet" media="screen" href="http://www.sport360.com//sites/default/files/css/css_5e6eec3cc9950d8c3ed12a8e7948432c.css" />
-	<link type="text/css" rel="stylesheet" media="print" href="http://static.sport360.com/sites/all/themes/openpublish_theme/css/print.css?v=1.0"/>
-	<link type="text/css" rel="stylesheet" media="screen" href="style.css?v35" />
-	<script type="text/javascript" src="http://use.typekit.com/srl7xxo.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script type="text/javascript" src="http://www.sport360.com//sites/default/files/js/js_94589f9a906b54e9cc10035e6f114243.js"></script>
+    <style>
+        #chooseLang, .ui-widget-overlay {
+            display: none;
+        }
+        .ui-widget-content {
+            border: 6px solid #dddddd;
+        }
+        .chooseLang {
+            background: #000;
+            display: none;
+            padding-top: 20px;  
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;    
+            position: relative;   
+            overflow: visible !important; 
+            padding-bottom: 0;
+        }
 
-	<!--[if gte IE 6]><link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/openpublish_theme/css/fix-ie.css" /><![endif]-->
-	<!--[if IE 6]><link type="text/css" rel="stylesheet" media="all" href="/##path_not_found##" /><![endif]-->
-    
-	<link href="https://plus.google.com/101766922067071447547" rel="publisher" />
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/ui-lightness/jquery-ui.css" /> 
-	<!-- Start: GPT Sync -->
-	<script type='text/javascript'>
-		var gptadslots=[];
-		(function(){
-			var useSSL = 'https:' == document.location.protocol;
-			var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
-			document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-		})();
-	</script>
+        .chooseLang h1 {
+            background: #CC2029;
+            color: #fff;
+            border: none;
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .chooseLang-inner {
+            margin: 40px 10px;
+            background: #fff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px; 
+            overflow: hidden;
+            display: inline-block;
+            width: 55%;
+        }
+        .chooseLang .ar {
+            float: right;
+            width: 50%;
+            text-align: center;
+            border-left: 1px dashed #C6C6C6;
+        }
+        .chooseLang .en {
+            float: left;
+            width: 48%;
+            text-align: center;
 
-	<script type="text/javascript">
-		
-			//Adslot 1 declaration
-			gptadslots[1]= googletag.defineSlot('/4660810/en-sport360-mega', [[728,90]],'div-gpt-ad-723216161127733715-1').addService(googletag.pubads());
+        }
+        .chooseLang .en h1 {
+            font-size: 18px;
+        }
+        .chooseLang .en a img {
+            margin-top: 15px;
+        }
+        .chooseLang .ar a , .chooseLang .en a {
+            height: 120px;
+            background: #fff;
+            display: block;
+            margin: auto;
+            padding: 10px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+        .ui-widget-overlay
+        {
+            opacity: .50 !important; /* Make sure to change both of these, as IE only sees the second one */
+            filter: Alpha(Opacity=50) !important;
+            z-index: 1000;
+	    background-color: rgb(0, 0, 0) !important; /* This will make it darker */
+        }
+        .ui-dialog .ui-dialog-titlebar-close{
+            position: absolute;
+            right: -12px;
+            top: 1px;
+            width: 19px;
+            margin: -10px 0 0 0;
+            padding: 1px;
+            height: 18px;
+            background: #fff;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+        .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+            padding: 1px;
+            background: #fff;
+            z-index: 999999;
+        }
+        #chooseLang h4 {
+            color: #DDDDDD;
+ 	    font-size: 16px;
+        }
+    </style>
 
-			googletag.pubads().enableSingleRequest();
-			googletag.pubads().enableSyncRendering();
-			googletag.enableServices();
+    <!-- Start: GPT Sync -->
+    <script type='text/javascript'>
+        var gptadslots=[];
+        (function(){
+            var useSSL = 'https:' == document.location.protocol;
+            var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+        })();
+    </script>
+    <script type="text/javascript">
+            //Adslot 1 declaration
+            gptadslots[6]= googletag.defineSlot('/4660810/en-sport360-home', [[1,1]],'div-gpt-ad-bg-1').setTargeting('dcopt',['ist']).addService(googletag.pubads());
 
-	</script>
-	<!-- End: GPT -->
+            //Adslot oop declaration
+            gptadslots[7] = googletag.defineOutOfPageSlot('/4660810/en-sport360-home', 'div-gpt-ad-bg-oop').setTargeting('dcopt',['ist']).addService(googletag.pubads());
+
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().enableSyncRendering();
+            googletag.enableServices();
+    </script>
+    <!-- End: GPT --> 
 </head>
 
 <body class="sidebar-right front-page front not-logged-in page-node one-sidebar sidebar-right" >
@@ -167,7 +449,7 @@
 								<span><a href="http://www.twitter.com/sport_360"><img src="http://static.sport360.com/sites/all/themes/openpublish_theme/images/T_header.png" alt="Tweeter"/></a></span>
 							</div>
 							<div>
-								<span><a href="http://www.sport360.com/content/sport-360-rss-feeds"><img src="http://static.sport360.com/sites/all/themes/openpublish_theme/images/RSS_header.png" alt="Get the main site RSS feed"/></a></span>
+								<span><a href="http://v1.sport360.com/content/sport-360-rss-feeds"><img src="http://static.sport360.com/sites/all/themes/openpublish_theme/images/RSS_header.png" alt="Get the main site RSS feed"/></a></span>
 							</div>
 							<div class="span1 lang" style="">
 								<span class="label label-inverse lang_ar">
@@ -205,7 +487,7 @@
                     </div>
 				</div>
 				<div class="header_logo">
-					<a href="/" title="Sport 360"><img src="http://sport360.com/sites/default/files/openpublish_theme_logo.png" alt="Sport 360" /></a>
+					<a href="/" title="Sport 360"><img src="http://v1.sport360.com/sites/default/files/openpublish_theme_logo.png" alt="Sport 360" /></a>
 				</div>
 			</div>
 			<!-- /#header -->
@@ -554,8 +836,8 @@
 							<span><a title="Tweeter" href="http://www.twitter.com/sport_360">Twitter</a></span>
 						</div>
 						<div>
-							<span><a href="http://www.sport360.com/content/sport-360-rss-feeds"><img src="http://static.sport360.com/sites/all/themes/openpublish_theme/images/RSS_footer.png" alt="Get the main site RSS feed"/></a></span>
-							<span><a title="RSS" href="http://www.sport360.com/content/sport-360-rss-feeds">RSS</a></span>
+							<span><a href="http://v1.sport360.com/content/sport-360-rss-feeds"><img src="http://static.sport360.com/sites/all/themes/openpublish_theme/images/RSS_footer.png" alt="Get the main site RSS feed"/></a></span>
+							<span><a title="RSS" href="http://v1.sport360.com/content/sport-360-rss-feeds">RSS</a></span>
 						</div>
 					</div>
 					<div class="copyR">© 2011 Sport360.com. All rights reserved.</div>
@@ -563,7 +845,8 @@
 			</div> <!-- /#footer -->
 		</div> <!-- /#outer-wrapper -->
   <!-- /layout -->
-  <script type="text/javascript" src="http://www.sport360.com/sites/default/files/js/js_d970294f19c52f18a3ff2d1c650eb0e2.js"></script>
+  <script type="text/javascript" src="/sites/default/files/js/js_bd755653c2e4e099957c18a21d3887f0.js"></script>
+
   <!-- Google-analytics -->
   <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -576,96 +859,120 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
    </script>
-	<script type="text/javascript">
-	 $(document).ready(function() {
-	 $('.unreg_req_post').click(function(){
-			$('#black_bg').show('fast');
-			$('#popup_error').show('fast');
-				 return false;
-			})
-		  $('#close_button').click(function(){
-			$('#black_bg').hide('fast');
-			$('#popup_error').hide('fast');
-				 return false;
-			})
-	 });
-	</script>
-	<!-- Kontera ContentLink(TM);-->
-	<script type='text/javascript'>
-	var dc_AdLinkColor = 'blue' ;
-	var dc_PublisherID = 206782 ;
-	</script>
-	<script type='text/javascript' src='http://kona.kontera.com/javascript/lib/KonaLibInline.js'></script>
-	<!-- Kontera ContentLink(TM) -->
-	<script  type="text/javascript" src="http://static.sport360.com/sites/all/themes/openpublish_theme/js/jquery.cookie.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" type="text/javascript"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			
-			window.change_lang = function() {
-				
-				$('.ui-widget-overlay').show(); 
-				$('.ui-dialog').show();
+<script type="text/javascript">
+ $(document).ready(function() {
+ $('.unreg_req_post').click(function(){
+        $('#black_bg').show('fast');
+        $('#popup_error').show('fast');
+             return false;
+        })
+      $('#close_button').click(function(){
+        $('#black_bg').hide('fast');
+        $('#popup_error').hide('fast');
+             return false;
+        })
+ });
+</script>
 
-				$('div#chooseLang').dialog({ 
-					autoOpen: true,
-					width: 650,
-					height: 365,
-					resizable: false,
-					dialogClass:'chooseLang',
-					close : function() { 
-						$('.ui-widget-overlay').hide();
-						$('.ui-dialog').hide();
-						//Set the Coockie to English
-						//$.cookie("sp", 'en');
-						$.cookie("sp_lang", 'en', { expires: 720, path: '/', domain: '.sport360.com' });
-					}
-				});
-				$(".ui-dialog-titlebar").hide();
-				//$('.ui-widget-overlay').css('display','block');
-				
-				$('.ui-widget-overlay, .close-btn').live("click", function(e) {
-					e.preventDefault();
-					$("div#chooseLang").dialog("close");
-				});
+<!-- Kontera ContentLink(TM);-->
+<script type='text/javascript'>
+var dc_AdLinkColor = 'blue' ;
+var dc_PublisherID = 206782 ;
+</script>
+<script type='text/javascript' src='http://kona.kontera.com/javascript/lib/KonaLibInline.js'>
+</script>
+<!-- Kontera ContentLink(TM) -->
 
-				$('.chooseLang .en a').live("click", function(e) {
-					e.preventDefault();
-					$("div#chooseLang").dialog("close");
+<script  type="text/javascript" src="http://static.sport360.com/sites/all/themes/openpublish_theme/js/jquery.cookie.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" type="text/javascript"></script>
 
-					//Set the Coockie to English
-					$.cookie("sp_lang", 'en', { expires: 720, path: '/', domain: '.sport360.com' });
-					//redirect
-					window.location = 'http://www.sport360.com';
-				});
+<script type="text/javascript">
+        $(document).ready(function() {
+            
+            window.change_lang = function() {
+                
+                $('.ui-widget-overlay').show(); 
+                $('.ui-dialog').show();
 
-				$('.chooseLang .ar a').live("click", function(e) {
-					e.preventDefault();
-					$("div#chooseLang").dialog("close");
+                $('div#chooseLang').dialog({ 
+                    autoOpen: true,
+                    width: 650,
+                    height: 365,
+                    resizable: false,
+                    dialogClass:'chooseLang',
+                    close : function() { 
+                        $('.ui-widget-overlay').hide();
+                        $('.ui-dialog').hide();
+                        //Set the Coockie to English
+                        //$.cookie("sp", 'en');
+                        $.cookie("sp_lang", 'en', { expires: 720, path: '/', domain: '.sport360.com' });
+                    }
+                });
+                $(".ui-dialog-titlebar").hide();
+                //$('.ui-widget-overlay').css('display','block');
+                
+                $('.ui-widget-overlay, .close-btn').live("click", function(e) {
+                    e.preventDefault();
+                    $("div#chooseLang").dialog("close");
+                });
 
-					//Set the Coockie to Arabic
-					$.cookie("sp_lang", 'ar', { expires: 720, path: '/', domain: '.sport360.com' });
+                $('.chooseLang .en a').live("click", function(e) {
+                    e.preventDefault();
+                    $("div#chooseLang").dialog("close");
 
-					window.location = 'http://arabic.sport360.com';
-				});
-			} //end of function change_lang 
+                    //Set the Coockie to English
+                    $.cookie("sp_lang", 'en', { expires: 720, path: '/', domain: '.sport360.com' });
+                    //redirect
+                    window.location = 'http://www.sport360.com';
+                });
 
-			if (location.pathname == "/" && !$.cookie("sp_lang")) {
-				change_lang();  
-			} //end of location.pathname 
+                $('.chooseLang .ar a').live("click", function(e) {
+                    e.preventDefault();
+                    $("div#chooseLang").dialog("close");
 
-			(function() {
-			  //update cookie value
-			  if($.cookie("sp_lang") == "ar")
-				  $('.label.cookie').html("عربي");
-			  else 
-				  $('.label.cookie').html("english");
-			})();
+                    //Set the Coockie to Arabic
+                    $.cookie("sp_lang", 'ar', { expires: 720, path: '/', domain: '.sport360.com' });
 
-		});
-	</script>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/custom.js?v1"></script>
+                    window.location = 'http://arabic.sport360.com';
+                });
+            } //end of function change_lang 
+
+            if (location.pathname == "/" && !$.cookie("sp_lang")) {
+                change_lang();  
+            } //end of location.pathname 
+
+            (function() {
+              //update cookie value
+              if($.cookie("sp_lang") == "ar")
+                  $('.label.cookie').html("عربي");
+              else 
+                  $('.label.cookie').html("english");
+            })();
+
+        });
+    </script>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function boost_gzip_test_ready() {
+  if(boost_xhr.readyState != 4) {
+    setTimeout(boost_gzip_test_ready, 1000);
+  }
+  else if (boost_xhr.getResponseHeader("Content-Encoding") == "gzip" && boost_xhr.responseText.indexOf("</html>") != -1) {
+    var date = new Date();
+    var days = 14;
+    date.setTime(date.getTime() + (days * 24*60*60*1000));
+    expires = "; expires=" + date.toUTCString();
+    document.cookie = "boost-gzip=true" + expires + "; path=/"
+  }
+}
+
+var boost_xhr = $.ajax({url: Drupal.settings.basePath + "boost-gzip-cookie-test.html"});
+boost_gzip_test_ready();
+//--><!]]>
+</script>
 </body>
 </html>
+<!-- Page cached by Boost @ 2014-01-23 21:55:24, expires @ 2014-01-24 00:55:24 -->
+
