@@ -663,7 +663,7 @@ background: #000;
 					</div>
 				</div>
 				<div class="features vfeatures">
-					<div class="section-title flaot-L CondMedium"><a id="xxvote" href="#"><span class="Cond">MEGA VOTE</span><span class="mred"> FINALISTS</span></a></div>
+					<div class="section-title flaot-L CondMedium"><a id="xxvote" href="#"><span class="Cond">MEGA VOTE</span><span class="mred"></span></a></div>
 					<div class="section-underline"></div>
 					<div class="vote_con_c questions">
 						<ul class="left-list">
@@ -776,7 +776,7 @@ background: #000;
 						</form>
 						<p class="error_vote">Error posting vote</p>
 						<p class="success_vote">Successfully Voted</p>
-				</div>	
+					</div>	
 			</div>	
 			<?php 
 			/*
