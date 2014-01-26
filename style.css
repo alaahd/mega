@@ -321,7 +321,7 @@ input[type="text"] {
 	list-style: none
 }
 .menu-799 a {
-	min-width:187px !important;
+	min-width:184px !important;
 }
 .hide {
 	display : none !important;
@@ -452,3 +452,6 @@ input[type="text"] {
 }
 .award_event_program time {display : block;}
 .award_event_program li span { font-style: italic;}
+#block-nice_menus-1 #nice-menu-1 li a {
+	font-size: 22px !important;
+}
