@@ -69,7 +69,7 @@ left: -1px;}
 .questions li {
 	margin:0 0 15px 0;
 	list-style: none;
-	font-size: 25px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 .questions li a:hover{
@@ -356,7 +356,7 @@ input[type="text"] {
 }
 .v_option p {
 	float: right;
-	width: 130px;
+	width: 110px;
 	color: #333;
 	font-weight: bold;
 	font-size: 15px;

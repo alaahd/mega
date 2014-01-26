@@ -135,7 +135,7 @@ if(location.pathname == "/" && getParameterByName("fv") == 1) {
 
     		
     <link type="text/css" rel="stylesheet" media="all" href="http://v1.sport360.com/sites/default/files/css/css_74475485b367d0b3b2faf9d8ae9304ea.css" />
-    <link type="text/css" rel="stylesheet" media="all" href="style.css?v=42" />
+    <link type="text/css" rel="stylesheet" media="all" href="style.css?v=43" />
 <link type="text/css" rel="stylesheet" media="screen" href="http://v1.sport360.com/sites/default/files/css/css_e25a201226956895b65e370af0ac2f2a.css" />
   <link type="text/css" rel="stylesheet" media="print" href="http://static.sport360.com/sites/all/themes/openpublish_theme/css/print.css?v=1.0"/>
 
