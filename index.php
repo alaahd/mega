@@ -715,17 +715,8 @@ background: #000;
 								</div>	
 								<?php
 							}	
-							
 							?>
-							#Name<br/>
-							#<input type="text" name="full_name" /><br/><br/>
-							#Email<br/>
-							#<input type="text" name="email" /><br/><br/>
-							#Mobile<br/>
-							#<input type="text" name="mobile" /><br/><br/>
-							#<input type="submit" value="Submit"/>
 							
-							?>
 							<div class="main-content-subscribe"> 
 								<div class="standalone-field">
 									<div class="form-item xfg" id="edit-Name-wrapper">
@@ -891,8 +882,6 @@ var dc_PublisherID = 206782 ;
 <!-- Kontera ContentLink(TM) -->
 
 <script  type="text/javascript" src="http://static.sport360.com/sites/all/themes/openpublish_theme/js/jquery.cookie.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" type="text/javascript"></script>
-
 <script type="text/javascript">
         $(document).ready(function() {
             
@@ -978,6 +967,10 @@ var boost_xhr = $.ajax({url: Drupal.settings.basePath + "boost-gzip-cookie-test.
 boost_gzip_test_ready();
 //--><!]]>
 </script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js" type="text/javascript"></script>
+<script  type="text/javascript" src="js/custom.js"></script>
+
 </body>
 </html>
 <!-- Page cached by Boost @ 2014-01-23 21:55:24, expires @ 2014-01-24 00:55:24 -->
